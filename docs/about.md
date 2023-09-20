@@ -1,12 +1,12 @@
-# Illo dixerat gemitus miserrimus ab culpam dissimulat
+# Unidade 1
 
-## Stetit de placidum fictaque duobus
+## Diagrama de Ishikawa
 
-Lorem markdownum cernit peccare duplici transibat e sanguine dumque, altera, sic
-modo *inter*, se et **ecce valuere**. **Tempus deae** foramina ordine quam sit
-alipedum, in Cecropis fugit; ingrediens fateor iungere. Sua et, a tot deserta
-sed aera postquam animusque solvi, laedere parte. Tua sola agros succiduo, enim
-iam prodiga Erycis abest cingo inluxisse pressit.
+![](img/Fishbone.jpg)
+
+## Metologia adotada
+
+![](img/Metologia.jpg)
 
 Cadmus tendo non leve animae et *concipit*, donasse fores quondam Phoebus
 **fluit Polypemonis** et euntes spectare. Curvique et pice. Vetuere at

@@ -1,7 +1,29 @@
 site_name: Emaflix
 site_url: "https://example.com/"
 nav:
-  - Home: index.md
-  - About: about.md
+  - Início: index.md
+  - Entregas: about.md
 theme:
-  name: mkdocs 
+  name: material
+  features:
+  - navigation.tabs
+  - navigation.section
+  - toc.integrate
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - content.code.annotation
+  - content.code.copy
+  language: pt-BR
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Modo Dark
+      primary: green
+      accent: red
+  plugins:
+  - glightbox
+
+  
