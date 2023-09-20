@@ -1,5 +1,5 @@
 site_name: Emaflix
-site_url: "site/index.html"
+site_url: "docs/index.md"
 nav:
   - Home: index.md
   - About: about.md
