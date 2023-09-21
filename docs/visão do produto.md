@@ -20,8 +20,7 @@ Os usuários são principalmente estudantes do IFB, mas também toda a comunidad
 | Ao contrario  | Do youtube.                                                                                     |
 | Nosso produto | Centraliza a distribuição dos videos do IFB, contendo todo o acervo em um unico espaço e facilitando a busca. |
 
-
-<img src="../docs/img/Fishbone.png" width="1024"/>
+![1](docs/../img/Fishbone.png)
 
 ## Objetivo do Produto
 
