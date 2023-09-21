@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/licoes/</loc>
+         <lastmod>2023-09-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/processo/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
