@@ -5,7 +5,8 @@ nav:
   - Documentação: 
       - Visão Geral do Produto: "visão do produto.md"
       - Visão Geral do Projeto: "visão do projeto.md"
-    
+      - Processo de desenvolvimento de software: "processo.md"
+
 theme: 
   name: material
   features:
