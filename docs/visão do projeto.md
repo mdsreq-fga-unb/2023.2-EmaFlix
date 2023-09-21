@@ -2,12 +2,12 @@
 
 ## Organização do Projeto
 
-| Papel             | Atribuições | Responsavel | Participantes |
-| ------------------| ------------| ------------| ------------- |
-| Dev Scrum Master  | Organização de sprints, planejamento de objetivos​​ | Danilo Naves do Nascimento | Todos |
-| Dev Back enn      | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de back-end do produto​ | Israel Silva Nunes /  Pedro Paulo Monte Pagani​ | Todos |
-| Dev Ci Test       | Executar testes e implementar a integração contínua | Aline Melo Oliveira /  Uires Carlos de Oliveira​ | Todos |
-| Dev Front End     | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de front-end do produto | Murilo Rodrigues de Araujo​ | Todos |
+| Papel            | Atribuições | Responsavel | Participantes |
+|------------------| ------------| ------------| ------------- |
+| Dev Scrum Master | Organização de sprints, planejamento de objetivos​​ | Danilo Naves do Nascimento | Todos |
+| Dev Back end     | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de back-end do produto​ | Israel Silva Nunes /  Pedro Paulo Monte Pagani​ | Todos |
+| Dev Ci Test      | Executar testes e implementar a integração contínua | Aline Melo Oliveira /  Uires Carlos de Oliveira​ | Todos |
+| Dev Front End    | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de front-end do produto | Murilo Rodrigues de Araujo​ | Todos |
 
 ## Planejamento das Fases e/ou Iterações do Projeto
 

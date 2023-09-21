@@ -3,7 +3,7 @@
 ## Histórico de Revisão
 | Data  | Versão | Descrição | Autor |
 | ---   | ------ | --------- | ----- |
-| 20/09 |  1.1   | Primeira versão do documento | 
+| 20/09 |  1.1   | Primeira versão do documento | Todos |
 
 ## Declaração de Posição do produto
 O produto proposto é um aplicação WEB, com extensão também no formato mobile para celulares Android e IOS que funciona como um acervo de conteúdo audiovisual, além de ser possível que os estudantes façam upload de seus próprios vídeos profissionais a pedido ao administrador. ​
@@ -19,7 +19,10 @@ Os usuários são principalmente estudantes do IFB, mas também toda a comunidad
 | Que           | Armazena, cataloga e distribui as produções em uma unica plataforma facilitando o acesso       |
 | Ao contrario  | Do youtube.                                                                                     |
 | Nosso produto | Centraliza a distribuição dos videos do IFB, contendo todo o acervo em um unico espaço e facilitando a busca. |
- 
+
+
+<img src="../docs/img/Fishbone.png" width="1024"/>
+
 ## Objetivo do Produto
 
 ### Objetivo Geral 
