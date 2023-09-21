@@ -1,9 +1,12 @@
 site_name: Emaflix
 site_url: "https://example.com/"
 nav:
-  - Início: index.md
-  - Entregas: about.md
-theme:
+  - Home: index.md
+  - Documentação: 
+      - Visão Geral do Produto: "visão do produto.md"
+      - Visão Geral do Projeto: "visão do projeto.md"
+    
+theme: 
   name: material
   features:
   - navigation.tabs
