@@ -1,9 +1,8 @@
 
-| Participante             | Matrícula |
-|--------------------------|-----------|
-| Pedro Paulo Monte Pagani | 211043736 |
-| Israel Silva Nunes       | 170121267 |
-| Aline Melo Oliveira | 211031557 |
-| Murilo Rodrigues de Araujo | 190114622 |
-| Uires Carlos de oliveira | 202043307 |
+| Participante               | Matrícula |
+|----------------------------|-----------|
+| Aline Melo Oliveira        | 211031557 |
 | Danilo Naves do Nascimento | 221022515 |
+| Israel Silva Nunes         | 170121267 |
+| Pedro Paulo Monte Pagani   | 211043736 |
+| Uires Carlos de Oliveira   | 202043307 |

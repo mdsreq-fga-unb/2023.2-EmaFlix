@@ -1,13 +1,13 @@
 #Visão do Projeto
 
-## Organização do Projeto
-
-| Papel            | Atribuições | Responsavel | Participantes |
-|------------------| ------------| ------------| ------------- |
-| Dev Scrum Master | Organização de sprints, planejamento de objetivos​​ | Danilo Naves do Nascimento | Todos |
-| Dev Back end     | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de back-end do produto​ | Israel Silva Nunes /  Pedro Paulo Monte Pagani​ | Todos |
-| Dev Ci Test      | Executar testes e implementar a integração contínua | Aline Melo Oliveira /  Uires Carlos de Oliveira​ | Todos |
-| Dev Front End    | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de front-end do produto | Murilo Rodrigues de Araujo​ | Todos |
+|       Papel      | Atribuições | Responsável | Participantes |
+|------------------|-------------| ------------|-----------------|
+|Cliente           | Fornecer feedback, validar entregas | Diego Sodré | Diego Sodré (Cliente), George Marsicano (Prof)
+| Dev Back end     | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de back-end do produto​ | Israel Silva Nunes /  Pedro Paulo Monte Pagani​ | Aline, Danilo, Israel, Pedro, Uires |
+| Dev Ci Test      | Executar testes e implementar a integração contínua | Aline Melo Oliveira /  Uires Carlos de Oliveira​ | Aline, Danilo, Israel, Pedro, Uires |
+| Dev Front End    | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de front-end do produto | Uires Carlos de Oliveira​ | Aline, Danilo, Israel, Pedro, Uires |
+| Dev Scrum Master | Organização de sprints, planejamento de objetivos​​ | Danilo Naves do Nascimento | Aline, Danilo, Israel, Pedro, Uires |
+|Product Owner   |Atualizar escopo do produto, organizar sprints, validar entregas| Danilo | Danilo
 
 ## Planejamento das Fases e/ou Iterações do Projeto
 
@@ -21,13 +21,19 @@
 
 | Descrição       | Area/Envolvidos         | Periodicidade | Produtos gerais                        |
 | ---------       | ---------------         | ------------- | ---------------                        |
-| Sprint Planning | Equipe do projeto       | Quinzenal     | Backlog da Sprint                      |
-| Sprint Review   | Equipe do Projeto       | Quinzenal     | Revisão das features                   |
-| Sprint Retrospective | Equipe do Projeto  | Quinzenal     | Documentação de projeto, melhorias e lições aprendidas  |
-| Daily adaptada  | Equipe do Projeto     | 2x por semana        | Ajustas equipe e revisar avanços |
+| Sprint Planning | Equipe do projeto, cliente, PO     | Quinzenal     | Backlog da Sprint                      |
+| Sprint Review   | Equipe do Projeto, cliente, PO       | Quinzenal     | Revisão das features                   |
+| Sprint Retrospective | Equipe do Projeto,   | Quinzenal     | Documentação de projeto, melhorias e lições aprendidas  |
+| Reunião de acompanhamento  | Equipe do Projeto     | 2x por semana        | Ajustas equipe e revisar avanços |
 
 ## Gerenciamento de riscos 
 
 
 | Risco                        | Causa                                                                             |
 | -----------------------------| ----------------------------------------------------------------------------------|
+
+
+## Organização do Projeto
+
+| Papel            | Atribuições | Responsavel | Participantes |
+|------------------| ------------| ------------| ------------- |

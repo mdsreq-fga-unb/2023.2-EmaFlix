@@ -1,5 +1,5 @@
 # Processo de desenvolvimento de software
-Nossa metodologia de desenvolvimento é simples, vão ser utilizadas técnicas do XP e Scrum.
+Em nossa metodologia de desenvolvimento foi escolhido as técnicas do XP e as cerimônias do Scrum.
 ![1](docs/../img/Metologia.png)
 
 ## Práticas do Scrum que serão aplicadas
