@@ -1,5 +1,7 @@
 #Visão do Projeto
 
+## Organização do Projeto
+
 |       Papel      | Atribuições | Responsável | Participantes |
 |------------------|-------------| ------------|-----------------|
 |Cliente           | Fornecer feedback, validar entregas | Diego Sodré | Diego Sodré (Cliente), George Marsicano (Prof)
@@ -33,7 +35,4 @@
 | -----------------------------| ----------------------------------------------------------------------------------|
 
 
-## Organização do Projeto
 
-| Papel            | Atribuições | Responsavel | Participantes |
-|------------------| ------------| ------------| ------------- |
