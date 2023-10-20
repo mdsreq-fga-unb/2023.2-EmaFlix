@@ -76,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#historico-de-revisao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -491,6 +496,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Backlog do produto
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -500,6 +516,65 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisao" class="md-nav__link">
+    Histórico de Revisão
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicao-de-preparado" class="md-nav__link">
+    Definição de Preparado
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicao-de-pronto" class="md-nav__link">
+    Definição de Pronto
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personas" class="md-nav__link">
+    Personas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-funcionais" class="md-nav__link">
+    Requisitos funcionais
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requisitos-nao-funcionais" class="md-nav__link">
+    Requisitos não funcionais
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -549,7 +624,177 @@
 
   <h1>Backlog do produto</h1>
 
-
+<h2 id="historico-de-revisao">Histórico de Revisão</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>19/10</td>
+<td>1.0</td>
+<td>Primeira versão do backlog do produto</td>
+<td>Todos</td>
+</tr>
+</tbody>
+</table>
+<h2 id="definicao-de-preparado">Definição de Preparado</h2>
+<ol>
+<li>O item de backlog deve caber em uma sprint de duas semanas.</li>
+<li>Toda a equipe deve compreender o item de backlog em sua totalidade.</li>
+<li>Todos os pré-requisitos para construção do item devem estar desenvolvidos</li>
+<li>O requisito deve estar descrito em uma história de usuário.</li>
+<li>O requisito deve possuir critérios de aceitação.</li>
+</ol>
+<h2 id="definicao-de-pronto">Definição de Pronto</h2>
+<ol>
+<li>Critérios de aceitação: Passa pelos critérios de aceitação definidos?.</li>
+<li>
+<p>Se está de acordo com o padrão de codificação definido abaixo.</p>
+<p><strong>Convenção de Nomenclatura:</strong> Use nomes descritivos para variáveis, funções e classes.</p>
+<p><strong>Indentação e Espaçamento:</strong> Mantenha uma formatação consistente usando espaços ou tabs para indentação.</p>
+<p><strong>Comentários:</strong> Escreva comentários claros e concisos explicando o que o código está fazendo.</p>
+<p><strong>Duplicação de Código:</strong> Refatore o código para evitar repetições. Use funções ou classes para encapsular 
+ funcionalidades comuns.</p>
+<p><strong>Organização de Arquivos e Diretórios:</strong> Mantenha uma estrutura de diretórios bem organizada para facilitar a navegação e a manutenção do código.</p>
+</li>
+</ol>
+<h2 id="personas">Personas</h2>
+<p><strong>Administrador:</strong> Professores que serão responsáveis por gerenciar os conteúdos da plataforma e terá a permissão de administrador do sistema.</p>
+<p><strong>Usuário:</strong> Alunos e público externo que terão acesso aos conteúdos e as funções destinadas a usuários.</p>
+<h2 id="requisitos-funcionais">Requisitos funcionais</h2>
+<p>Requisitos funcionais são um conjunto de especificações que delineiam o comportamento e as capacidades que um sistema ou software deve apresentar. Eles estabelecem as funcionalidades que o sistema precisa ter para satisfazer as necessidades e expectativas dos usuários, além de descrever os processos que o sistema deve ser capaz de executar.</p>
+<table>
+<thead>
+<tr>
+<th>Temas</th>
+<th>Épicos</th>
+<th>User Story</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gerenciamento de Pessoas</td>
+<td>Gerenciamento de logins</td>
+<td>Eu, como usuário, gostaria de acessar a minha página particular.</td>
+</tr>
+<tr>
+<td>Gerenciamento de Pessoas</td>
+<td>Gerenciamento de logins</td>
+<td>Eu, como administrador gostaria de ter acessar minha pagina particular.</td>
+</tr>
+<tr>
+<td>Gerenciamento de Pessoas</td>
+<td>Gerenciamento de logins</td>
+<td>Eu, como usuário, gostaria de recuperar minha senha caso a perda.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como usuário, gostaria de poder assistir os produtos audiovisuais da plataforma.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como administrador, gostaria de poder fazer o upload de vídeos na plataforma.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como administrador, gostaria de assinalar o gênero dos vídeos upados.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como administrador, gostaria de assinalar a faixa etária dos vídeos upados.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como usuário, gostaria de buscar filmes por gênero.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como usuário, gostaria de buscar os filmes por classificação indicativa.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como usuário, gostaria de procurar os filmes por nome.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como usuário, gostaria de fazer uma avaliação escrita acerca de uma uma produção audiovisual.</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como usuário, gostaria de poder dar uma nota a uma produção audiovisual</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como administrador, gostaria de poder remover uma avaliação escrita de cunho pejorativo</td>
+</tr>
+<tr>
+<td>Gerenciamento da plataforma</td>
+<td>Gerenciamento de conteúdos</td>
+<td>Eu, como administrador, gostaria de poder dar destaque a uma avaliação escrita de usuário</td>
+</tr>
+<tr>
+<td>Utilização da plataforma</td>
+<td>Usabilidade de usuário</td>
+<td>Eu, como usuário, posso comentar críticas sobre os materiais exibidos.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="requisitos-nao-funcionais">Requisitos não funcionais</h2>
+<p>Requisitos não funcionais são critérios que definem as características e restrições que um sistema ou software deve possuir, além das suas funcionalidades. Eles se concentram em aspectos que não estão diretamente relacionados às operações específicas do sistema, mas são cruciais para garantir seu desempenho, segurança, usabilidade e eficiência.</p>
+<table>
+<thead>
+<tr>
+<th>Categoria</th>
+<th>Requisito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Usabilidade</strong></td>
+<td>Navegação Intuitiva: Os usuários devem ser capazes de navegar facilmente pelo sistema.</td>
+</tr>
+<tr>
+<td><strong>Usabilidade</strong></td>
+<td>Design Padronizado: O sistema será desenvolvido usando um padrão de telas.</td>
+</tr>
+<tr>
+<td><strong>Usabilidade</strong></td>
+<td>Compatibilidade com Dispositivos Móveis: O site oferecerá uma versão adaptativa para usuários mobiles.</td>
+</tr>
+<tr>
+<td><strong>Desempenho</strong></td>
+<td>Taxa de Qualidade de Vídeo: A plataforma será capaz de suporte a todas as qualidades de vídeo até 1080p.</td>
+</tr>
+<tr>
+<td><strong>Desempenho</strong></td>
+<td>Capacidade de Armazenamento: A plataforma terá armazenamento baseado nos servidores disponibilizados pelo próprio campus.</td>
+</tr>
+<tr>
+<td><strong>Suportabilidade</strong></td>
+<td>Suporte aos navegadores Chrome, Microsoft Edge, Firefox, Opera, Opera GX.</td>
+</tr>
+<tr>
+<td><strong>Suportabilidade</strong></td>
+<td>Layout adaptativo para acessar o website por navegadores mobile.</td>
+</tr>
+</tbody>
+</table>
 
 
 
