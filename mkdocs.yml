@@ -7,6 +7,9 @@ nav:
       - Visão Geral do Projeto: "visão do projeto.md"
       - Processo de desenvolvimento de software: "processo.md"
       - Lições aprendidas: "licoes.md"
+  - Backlog do produto:
+    - Backlog do produto: "backlog_produto.md"
+  - Referências bibliográficas: "referencias.md"
 
 theme: 
   name: material

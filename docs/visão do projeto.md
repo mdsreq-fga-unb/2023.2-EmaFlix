@@ -9,7 +9,7 @@
 | Dev Ci Test      | Executar testes e implementar a integração contínua | Aline Melo Oliveira /  Uires Carlos de Oliveira​ | Aline, Danilo, Israel, Pedro, Uires |
 | Dev Front End    | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de front-end do produto | Uires Carlos de Oliveira​ | Aline, Danilo, Israel, Pedro, Uires |
 | Dev Scrum Master | Organização de sprints, planejamento de objetivos​​ | Danilo Naves do Nascimento | Aline, Danilo, Israel, Pedro, Uires |
-|Product Owner   |Atualizar escopo do produto, organizar sprints, validar entregas| Danilo | Danilo
+|Product Owner   |Atualizar escopo do produto, organizar sprints, validar entregas| Allex Medrado | Allex Medrado, Diego Sodré
 
 ## Planejamento das Fases e/ou Iterações do Projeto
 
@@ -30,9 +30,14 @@
 
 ## Gerenciamento de riscos 
 
+## Critérios de replanejamento
 
-| Risco                        | Causa                                                                             |
-| -----------------------------| ----------------------------------------------------------------------------------|
+**Atraso no cronograma da entrega:** Se ocorrerem atrasos inesperados durante o desenvolvimento do software, é essencial revisar o cronograma e, se necessário, ajustar as datas de entrega e os marcos do projeto.
+
+**Mudanças nos Requisitos do Cliente:** Se o cliente solicitar alterações ou adições significativas nos requisitos do projeto, isso pode exigir um replanejamento para avaliar o impacto dessas mudanças no escopo, prazo e recursos necessários.
+
+**Mudanças na Equipe de Desenvolvimento:**Caso algum aluno desista ou tranque a diciplina, é importante um replanejamento acerca do desenvolvendo do produto.
+
 
 
 
