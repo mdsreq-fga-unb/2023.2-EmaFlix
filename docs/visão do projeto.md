@@ -28,7 +28,40 @@
 | Sprint Retrospective | Equipe do Projeto,   | Quinzenal     | Documentação de projeto, melhorias e lições aprendidas  |
 | Reunião de acompanhamento  | Equipe do Projeto     | 2x por semana        | Ajustas equipe e revisar avanços |
 
-## Gerenciamento de riscos 
+## Gerenciamento de riscos
+
+Em face de possíveis indecisões e preocupações que podem surgir nas fases de execução do projeto, é crucial dar a devida importância ao gerenciamento de riscos. Isso serve como uma medida preventiva contra possíveis eventos que possam perturbar o ambiente da equipe desde o início do projeto.
+
+**Identificar Riscos:**
+
+Diminuição do número de membros da equipe no decorrer do semestre, pessoas chaves em algumas tecnologias.
+
+A falta de comunicação entre membros da equipe em assuntos considerados internos, bem como ao cliente externo para assuntos externos. 
+
+Questões de aprendizagem se o membro da equipe conseguirá se desenvolver em possíveis tecnologias tempo suficiente para entregar uma funcionalidade específica.
+
+**Mitigar Riscos:**
+
+Fazer um planejamento de sucessão em que será possível a Identificação de possíveis substitutos para cada membro chave da equipe. Isso pode ajudar a garantir uma transição suave se um membro da equipe sair.
+
+Efetuar o uso de ferramenta de comunicação eficaz permitindo a colaboração em tempo real e a troca de informações entre os membros da equipe, de forma interna (trello). E com o cliente externo incluir ferramentas de mensagens instantâneas, whatsApp/videoconferência, plataformas de gerenciamento de projetos.
+
+Criar uma forma de mentoria e suporte em que é estabelecido um sistema em que os membros mais experientes possam orientar aqueles que estão aprendendo e isso pode acelerar o processo de aprendizado e aumentar a confiança dos membros da equipe.
+
+**Revisão de Riscos:**
+
+Elaborar um plano de ação de emergência para cada risco que for identificado.
+
+Implementar medidas preventivas para reduzir a probabilidade de ocorrência dos riscos já apontados sanados.
+
+Atribuir responsabilidades específicas à equipe do projeto para gerenciar cada risco.
+
+
+**Registro de Riscos:**
+
+Fazer uma ou mais sessões de brainstorming com a equipe para identificar riscos potenciais e já tratados.
+
+Usar de técnicas como a análise da causa raiz para identificar os riscos na origem e sanar numa sala de crise.
 
 ## Critérios de replanejamento
 
