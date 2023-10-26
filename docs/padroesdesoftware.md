@@ -67,3 +67,10 @@ A modalidade de interações de um site se refere aos diferentes tipos de açõe
    Modos de Alto Contraste: Para usuários com deficiência visual ou daltonismo, oferecemos um modo de alto contraste que aumenta a legibilidade.
    Tamanhos de Fonte Ajustáveis: Permitiremos no software/site que os usuários ajustem o tamanho da fonte para acomodar diferentes níveis de visão.+++
    Ícones Descritivos: Usaremos ícones que sejam intuitivos e fáceis de entender para acomodar usuários com diferentes níveis de habilidade cognitiva, ícones de fácil entendimento a qualquer pessoa.  
+
+![1](docs/../img/Padroes.png)
+![1](docs/../img/Components.png)
+![1](docs/../img/Tela Desktop.png)
+![1](docs/../img/desktopfilter.png)
+![1](docs/../img/android1.png)
+![1](docs/../img/android2.png)
