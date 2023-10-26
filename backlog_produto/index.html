@@ -600,6 +600,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#criterios-de-priorizacao" class="md-nav__link">
+    Critérios de Priorização
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#requisitos-funcionais" class="md-nav__link">
     Requisitos funcionais
   </a>
@@ -758,7 +765,6 @@
 <h2 id="definicao-de-preparado">Definição de Preparado</h2>
 <ol>
 <li>O item de backlog deve caber em uma sprint de duas semanas.</li>
-<li>Toda a equipe deve compreender o item de backlog em sua totalidade.</li>
 <li>Todos os pré-requisitos para construção do item devem estar desenvolvidos</li>
 <li>O requisito deve estar descrito em uma história de usuário.</li>
 <li>O requisito deve possuir critérios de aceitação.</li>
@@ -778,7 +784,13 @@
 </ol>
 <h2 id="personas">Personas</h2>
 <p><strong>Administrador:</strong> Professores que serão responsáveis por gerenciar os conteúdos da plataforma e terá a permissão de administrador do sistema.</p>
-<p><strong>Usuário:</strong> Alunos e público externo que terão acesso aos conteúdos e as funções destinadas a usuários.</p>
+<p><strong>Estudantes:</strong> Alunos e público externo que terão acesso aos conteúdos e as funções destinadas a usuários.</p>
+<h2 id="criterios-de-priorizacao">Critérios de Priorização</h2>
+<p>O backlog e o critério de priorização, foram organizados e baseados em 3 variáveis: Valor de Negócio (VN), Viabilidade (V) e Criticidade (C). Os itens de backlog foram avaliados com uma pontuação de 1 a 5, indicando sua importância. A prioridade de cada requisito é determinada pela média dos critérios aplicados, calculada como:</p>
+<ul>
+<li><strong>(VN + V + C)/3</strong></li>
+</ul>
+<p>Além disso, foi usado este critério para definir os produtos MPV 1 e o MPV 2</p>
 <h2 id="requisitos-funcionais">Requisitos funcionais</h2>
 <p>Requisitos funcionais são um conjunto de especificações que delineiam o comportamento e as capacidades que um sistema ou software deve apresentar. Eles estabelecem as funcionalidades que o sistema precisa ter para satisfazer as necessidades e expectativas dos usuários, além de descrever os processos que o sistema deve ser capaz de executar.</p>
 <table>
@@ -1154,41 +1166,83 @@
 </table>
 <h2 id="requisitos-nao-funcionais">Requisitos não funcionais</h2>
 <p>Requisitos não funcionais são critérios que definem as características e restrições que um sistema ou software deve possuir, além das suas funcionalidades. Eles se concentram em aspectos que não estão diretamente relacionados às operações específicas do sistema, mas são cruciais para garantir seu desempenho, segurança, usabilidade e eficiência.</p>
+<ol>
+<li>Design Padronizado: O sistema será desenvolvido usando um padrão de interfaces definido.</li>
+<li>Compatibilidade com Dispositivos Móveis: O site oferecerá uma versão adaptativa para usuários mobiles.</li>
+<li>Compatibilidade com Dispositivos Móveis: Baseada na lista de telas padronizadas fornecida pelo Android Developers, a portabilidade garantida será de: 600 px &gt;= largura =&lt; 840 px  a 480 px &gt;= altura =&lt; 900 px</li>
+</ol>
 <table>
 <thead>
 <tr>
-<th>Categoria</th>
-<th>Requisito</th>
+<th>Classe de tamanho</th>
+<th>Pontos de interrupção</th>
+<th>Representação do dispositivos</th>
+<th>Percentual</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Usabilidade</strong></td>
-<td>Navegação Intuitiva: Os usuários devem ser capazes de navegar facilmente pelo sistema.</td>
+<td>Largura compacta</td>
+<td>&lt; 600 dp</td>
+<td>99,96% dos smartphones no modo retrato</td>
+<td>99,96%</td>
 </tr>
 <tr>
-<td><strong>Usabilidade</strong></td>
-<td>Design Padronizado: O sistema será desenvolvido usando um padrão de telas.</td>
+<td>Largura média</td>
+<td>600 dp+</td>
+<td>93,73% dos tablets no modo retrato</td>
+<td>93,73%</td>
 </tr>
 <tr>
-<td><strong>Usabilidade</strong></td>
-<td>Compatibilidade com Dispositivos Móveis: O site oferecerá uma versão adaptativa para usuários mobiles.</td>
+<td>Largura expandida</td>
+<td>Largura expandida</td>
+<td>97,22% dos tablets no modo paisagem</td>
+<td>97,22%</td>
 </tr>
 <tr>
-<td><strong>Desempenho</strong></td>
-<td>Taxa de Qualidade de Vídeo: A plataforma será capaz de suporte a todas as qualidades de vídeo até 1080p.</td>
+<td>Altura compacta</td>
+<td>&lt; 480 dp</td>
+<td>99,78% dos smartphones no modo paisagem</td>
+<td>99,78%</td>
 </tr>
 <tr>
-<td><strong>Desempenho</strong></td>
-<td>Capacidade de Armazenamento: A plataforma terá armazenamento baseado nos servidores disponibilizados pelo próprio campus.</td>
+<td>Altura média</td>
+<td>480 dp+</td>
+<td>96,56% dos tablets no modo paisagem e 97,59% de smartphones no modo retrato</td>
+<td>96,56% / 97,59%</td>
 </tr>
 <tr>
-<td><strong>Suportabilidade</strong></td>
-<td>Suporte aos navegadores Chrome, Microsoft Edge, Firefox, Opera, Opera GX.</td>
+<td>Altura expandida</td>
+<td>900 dp+</td>
+<td>94,25% de tablets no modo retrato</td>
+<td>94,25%</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Taxa de Qualidade de Vídeo: A plataforma será capaz de suporte a todas as qualidades de vídeo até 1080p.</li>
+<li>Capacidade de Armazenamento: A plataforma terá armazenamento baseado nos servidores disponibilizados pelo próprio campus.</li>
+<li>Suporte aos navegadores: A aplicação suportar os seguintes navegadores</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Navegação</th>
+<th>Versão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Firefox Browser</td>
+<td>Versão: 118.0.2 (64 bits)</td>
 </tr>
 <tr>
-<td><strong>Suportabilidade</strong></td>
-<td>Layout adaptativo para acessar o website por navegadores mobile.</td>
+<td>Google Chrome</td>
+<td>Versão: 118.0.5993.89 (64 bits)</td>
+</tr>
+<tr>
+<td>Microsoft Edge</td>
+<td>Versão: 118.0.2088.57 (64 bits)</td>
 </tr>
 </tbody>
 </table>
