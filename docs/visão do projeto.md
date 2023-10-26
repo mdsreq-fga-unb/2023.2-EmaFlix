@@ -23,8 +23,8 @@
 
 | Descrição       | Area/Envolvidos         | Periodicidade | Produtos gerais                        |
 | ---------       | ---------------         | ------------- | ---------------                        |
-| Sprint Planning | Equipe do projeto, cliente, PO     | Quinzenal     | Backlog da Sprint                      |
-| Sprint Review   | Equipe do Projeto, cliente, PO       | Quinzenal     | Revisão das features                   |
+| Sprint Planning | Equipe do projeto, PO   | Quinzenal     | Backlog da Sprint                      |
+| Sprint Review   | Equipe do Projeto, PO     | Quinzenal     | Revisão das features                   |
 | Sprint Retrospective | Equipe do Projeto,   | Quinzenal     | Documentação de projeto, melhorias e lições aprendidas  |
 | Reunião de acompanhamento  | Equipe do Projeto     | 2x por semana        | Ajustas equipe e revisar avanços |
 
