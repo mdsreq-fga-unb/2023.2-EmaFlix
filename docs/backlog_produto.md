@@ -6,10 +6,9 @@
 ## Definição de Preparado
 
 1. O item de backlog deve caber em uma sprint de duas semanas.
-2. Toda a equipe deve compreender o item de backlog em sua totalidade.
-3. Todos os pré-requisitos para construção do item devem estar desenvolvidos
-4. O requisito deve estar descrito em uma história de usuário.
-5. O requisito deve possuir critérios de aceitação.
+2. Todos os pré-requisitos para construção do item devem estar desenvolvidos
+3. O requisito deve estar descrito em uma história de usuário.
+4. O requisito deve possuir critérios de aceitação.
 
 ## Definição de Pronto
 
@@ -31,11 +30,21 @@
 
 **Administrador:** Professores que serão responsáveis por gerenciar os conteúdos da plataforma e terá a permissão de administrador do sistema.
 
-**Usuário:** Alunos e público externo que terão acesso aos conteúdos e as funções destinadas a usuários.
+**Estudantes:** Alunos e público externo que terão acesso aos conteúdos e as funções destinadas a usuários.
+
+## Critérios de Priorização
+
+O backlog e o critério de priorização, foram organizados e baseados em 3 variáveis: Valor de Negócio (VN), Viabilidade (V) e Criticidade (C). Os itens de backlog foram avaliados com uma pontuação de 1 a 5, indicando sua importância. A prioridade de cada requisito é determinada pela média dos critérios aplicados, calculada como:
+
+* **(VN + V + C)/3**
+
+Além disso, foi usado este critério para definir os produtos MPV 1 e o MPV 2
+
 
 ## Requisitos funcionais
 
 Requisitos funcionais são um conjunto de especificações que delineiam o comportamento e as capacidades que um sistema ou software deve apresentar. Eles estabelecem as funcionalidades que o sistema precisa ter para satisfazer as necessidades e expectativas dos usuários, além de descrever os processos que o sistema deve ser capaz de executar.
+
 
 | Temas                     | Épicos                     | Numeração | User Story                                                                                                                                                                     | Valor de negócio | Viabilidade | Criticidade | Total |
 |---------------------------|----------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------|-------------|-------|
@@ -89,14 +98,25 @@ Requisitos funcionais são um conjunto de especificações que delineiam o compo
 
 Requisitos não funcionais são critérios que definem as características e restrições que um sistema ou software deve possuir, além das suas funcionalidades. Eles se concentram em aspectos que não estão diretamente relacionados às operações específicas do sistema, mas são cruciais para garantir seu desempenho, segurança, usabilidade e eficiência.
 
-| Categoria | Requisito |
-|-----------|-----------|
-|**Usabilidade**|Navegação Intuitiva: Os usuários devem ser capazes de navegar facilmente pelo sistema.|
-|**Usabilidade**|Design Padronizado: O sistema será desenvolvido usando um padrão de telas.|
-|**Usabilidade**|Compatibilidade com Dispositivos Móveis: O site oferecerá uma versão adaptativa para usuários mobiles.|
-|**Desempenho**| Taxa de Qualidade de Vídeo: A plataforma será capaz de suporte a todas as qualidades de vídeo até 1080p.|
-|**Desempenho**| Capacidade de Armazenamento: A plataforma terá armazenamento baseado nos servidores disponibilizados pelo próprio campus.|
-|**Suportabilidade**| Suporte aos navegadores Chrome, Microsoft Edge, Firefox, Opera, Opera GX. |
-|**Suportabilidade**| Layout adaptativo para acessar o website por navegadores mobile.|
+1. Design Padronizado: O sistema será desenvolvido usando um padrão de interfaces definido.
+2. Compatibilidade com Dispositivos Móveis: O site oferecerá uma versão adaptativa para usuários mobiles.
+3. Compatibilidade com Dispositivos Móveis: Baseada na lista de telas padronizadas fornecida pelo Android Developers, a portabilidade garantida será de: 600 px >= largura =< 840 px  a 480 px >= altura =< 900 px
 
+| Classe de tamanho     | Pontos de interrupção | Representação do dispositivos                                   | Percentual           |
+|-----------------------|-----------------------|-----------------------------------------------------------------|----------------------|
+| Largura compacta      | < 600 dp              | 99,96% dos smartphones no modo retrato                           | 99,96%               |
+| Largura média         | 600 dp+               | 93,73% dos tablets no modo retrato                              | 93,73%               |
+| Largura expandida     | Largura expandida     | 97,22% dos tablets no modo paisagem                             | 97,22%               |
+| Altura compacta       | < 480 dp              | 99,78% dos smartphones no modo paisagem                         | 99,78%               |
+| Altura média          | 480 dp+               | 96,56% dos tablets no modo paisagem e 97,59% de smartphones no modo retrato | 96,56% / 97,59% |
+| Altura expandida      | 900 dp+               | 94,25% de tablets no modo retrato                               | 94,25%               |
 
+4. Taxa de Qualidade de Vídeo: A plataforma será capaz de suporte a todas as qualidades de vídeo até 1080p.
+5. Capacidade de Armazenamento: A plataforma terá armazenamento baseado nos servidores disponibilizados pelo próprio campus.
+6. Suporte aos navegadores: A aplicação suportar os seguintes navegadores
+
+| Navegação       | Versão                         |
+|-----------------|--------------------------------|
+| Firefox Browser | Versão: 118.0.2 (64 bits)      |
+| Google Chrome   | Versão: 118.0.5993.89 (64 bits)|
+| Microsoft Edge  | Versão: 118.0.2088.57 (64 bits)|

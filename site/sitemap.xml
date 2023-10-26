@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/sprints/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/vis%C3%A3o%20do%20produto/</loc>
          <lastmod>2023-10-26</lastmod>
          <changefreq>daily</changefreq>
