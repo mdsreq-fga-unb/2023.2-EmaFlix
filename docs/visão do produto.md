@@ -31,11 +31,8 @@ Nosso objetivo é implementar um sistema eficiente de organização ao acesso à
 
 ### Objetivos especificos
 
-Criar uma espaço para críticas especializadas, dando mais visibilidade para especialistas no assunto.
-
-Organizar as produções de acordo com gênero, sub gênero e classificação indicativa.
-
-Facilitar a entrega dos filmes para a comunidade.
+Melhorar a visualização do acervo de conteúdos da instituição.
+Ajudar na visibilidade das obras criadas pelos estudantes.
 
 ## Tecnologias a Serem Utilizadas 
 
