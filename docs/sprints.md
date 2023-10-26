@@ -1,4 +1,4 @@
-#Registro das sprints
+# Registro das sprints
 
 | Data de Início | Data de Encerramento | Sprint | Descrição da Sprint |
 | --------------- | -------------------- | ------ | ------------------- |
@@ -7,3 +7,14 @@
 | 11/11           | 25/11                | 5      | US 7 a 13 |
 | 26/11           | 10/12                | 6      | US 13 a 17 |
 | 11/12           | 13/12                | 7      | Ajustes e testes finais  |
+
+Entregas:
+
+## Unidade 1
+
+Link:
+https://youtu.be/m7M2WwMaMk4
+
+## Unidade 2
+Link:
+https://youtu.be/vAKCMKINozs

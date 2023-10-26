@@ -31,7 +31,7 @@ Nosso objetivo é implementar um sistema eficiente de organização ao acesso à
 
 ### Objetivos especificos
 
-Melhorar a visualização do acervo de conteúdos da instituição.
+Melhorar a visualização do acervo de conteúdos da instituição.  
 Ajudar na visibilidade das obras criadas pelos estudantes.
 
 ## Tecnologias a Serem Utilizadas 
