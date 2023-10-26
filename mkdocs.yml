@@ -6,11 +6,11 @@ nav:
       - Visão Geral do Produto: "visão do produto.md"
       - Visão Geral do Projeto: "visão do projeto.md"
       - Processo de desenvolvimento de software: "processo.md"
+      - Lições aprendidas : "licoesaprendidas.md"
   - Backlog do produto:
     - Backlog do produto: "backlog_produto.md"
   - Padrões de Software: "padroesdesoftware.md"
   - Sprints: "sprints.md"
-  - Lições aprendidas : "licoesaprendidas.md"
   - Referências bibliográficas: "referencias.md"
 
 theme: 

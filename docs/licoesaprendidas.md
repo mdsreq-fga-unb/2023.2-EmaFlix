@@ -10,9 +10,6 @@ Dificuldades e Superações:
 O primeiro cliente com quem entramos em contato desistiu do projeto: foi encontrado outro cliente interessado. 
 
 
-
-
-
 # Unid 2
 Lições aprendidas:   
 Há a dificuldade em encontrar horários que possibilitem a presença de todos os membros nas reuniões. 
