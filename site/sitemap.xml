@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://example.com/padroesdesoftware/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://example.com/processo/</loc>
          <lastmod>2023-10-26</lastmod>
          <changefreq>daily</changefreq>

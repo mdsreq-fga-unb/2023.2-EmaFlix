@@ -9,6 +9,7 @@ nav:
       - Lições aprendidas: "licoes.md"
   - Backlog do produto:
     - Backlog do produto: "backlog_produto.md"
+  - Padrões de Software: "padroesdesoftware.md"
   - Referências bibliográficas: "referencias.md"
 
 theme: 
