@@ -28,22 +28,13 @@ async function initPlayer() {
   window.player = player;
 
   // Listen for error events.
-  player.addEventListener('error', onErrorEvent);
+  player.addEventListener('error', onErrorEvent)
 
-  const qualitySelect = document.getElementById('qualitySelect');
-  tracks.forEach(track => {
-  const option = document.createElement('option');
-  option.textContent = track.height + 'p';
-  option.value = track.id;
-  qualitySelect.appendChild(option);
-  });
-
-  // Listen for changes in the dropdown and switch quality
-  qualitySelect.addEventListener('change', () => {
-  const trackId = Number(qualitySelect.value);
-  player.configure({ abr: { enabled: false } }); // Disable adaptive bitrate switching
-  player.selectVariantTrack(tracks.find(track => track.id === trackId), true);
-  });
+// Update your UI on quality change
+player.addEventListener('adaptation', () => {
+  const track = player.getVariantTracks().find(t => t.active);
+  updateYourUI(track.height); // This is a custom function to update your UI
+});
 
   // Try to load a manifest.
   // This is an arbitrary URL and should be replaced with your video URL.

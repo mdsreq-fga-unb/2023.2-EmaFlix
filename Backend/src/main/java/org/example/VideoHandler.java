@@ -3,10 +3,7 @@ package org.example;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 
 public class VideoHandler implements HttpHandler {
 
@@ -48,19 +45,24 @@ public class VideoHandler implements HttpHandler {
 
         // Send the response code
         exchange.sendResponseHeaders(206, end - start + 1);
-
-        try (OutputStream os = exchange.getResponseBody(); FileInputStream fis = new FileInputStream(file)) {
-            // Skip to the start position
-            fis.skip(start);
-
-            byte[] buffer = new byte[8192];
-            long totalBytesRead = 0;
-            int bytesRead;
-
-            while ((bytesRead = fis.read(buffer)) != -1 && totalBytesRead < (end - start + 1)) {
-                os.write(buffer, 0, bytesRead);
-                totalBytesRead += bytesRead;
+        byte[] seekContent = partialSeek(file, start, end + 1);
+        if(seekContent != null){
+            try (OutputStream os = exchange.getResponseBody()) {
+                os.write(seekContent);
             }
+        }
+    }
+
+    private byte[] partialSeek(File file, long start, long finish) {
+        int length = (int) (finish - start);
+        try (RandomAccessFile randomAccessFile = new RandomAccessFile(file, "r")) {
+            randomAccessFile.seek(start);
+            byte[] buffer = new byte[length];
+            randomAccessFile.read(buffer, 0, length);
+            return buffer;
+        } catch (Exception exception) {
+            exception.fillInStackTrace();
+            return null;
         }
     }
 

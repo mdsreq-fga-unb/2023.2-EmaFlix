@@ -1,13 +1,37 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/3.2.1/shaka-player.compiled.js"></script>
-    <meta charset="UTF-8" />
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('video');
+    const player = new shaka.Player(video);
+    const resolutionSelector = document.getElementById('resolutionSelector');
+
+    resolutionSelector.addEventListener('change', (event) => {
+      const height = parseInt(event.target.value, 10);
+      player.configure({
+        abr: {
+          restrictions: { minHeight: height, maxHeight: height }
+        }
+      });
+    });
+
+    player.addEventListener('adaptation', () => {
+      const track = player.getVariantTracks().find(t => t.active);
+      resolutionSelector.value = track.height;
+    });
+  });
+</script>    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <select id="qualitySelect">
-      1080p
+    <select id="resolutionSelector">
+      <option value="360">360p</option>
+      <option value="480">480p</option>
+      <option value="720">720p</option>
+      <option value="1080">1080p</option>
     </select>
     <video id="video" width="1080" controls autoplay></video>
   </head>
