@@ -28,9 +28,6 @@ public class VideoHandler implements HttpHandler {
             int currentSlot = (int) (start/partialSplit);
             System.out.println(currentSlot);
             int endAt = (partialSplit* (currentSlot + 1));
-            if(endAt > fileLength - 1){
-                endAt = (int) (fileLength - 1);
-            }
             serveFile(exchange, file, start, end, fileLength);
             System.out.println(end + " " + start );
         }
