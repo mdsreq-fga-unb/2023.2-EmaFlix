@@ -1,0 +1,24 @@
+name: Continuos Integration
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  continuos-integration:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Using Node.jobs
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18.x
+          
+      - name: run install dependecies frontend and run
+        run: |
+          cd Emaflix
+          npm install
+          npm run dev &
+          sleep 10
+          pkill -f "npm run dev"
