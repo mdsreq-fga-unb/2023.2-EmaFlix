@@ -7,7 +7,7 @@ import "../css/Home.css"
 const Home = () => {
     return (
         <div className="box">
-            <h1>Home</h1>
+            <h1>Home testing github actions</h1>
         </div>
     )
 };
