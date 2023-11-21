@@ -12,8 +12,8 @@ const Navbar = () => {
             </div>
             <ul>
                 <li><Link to={`/filter`} className="btn"><p>Busca</p><span className="material-symbols-outlined">search</span></Link></li>
-                <li><Link to={`/profile`} className="btn"><p>Avisos</p><span className="material-symbols-outlined">notifications_active</span></Link></li>
-                <li><Link to={`/notification`} className="btn"><p>Perfil</p><span className="material-symbols-outlined">person</span></Link></li>
+                <li><Link to={`/notification`} className="btn"><p>Avisos</p><span className="material-symbols-outlined">notifications_active</span></Link></li>
+                <li><Link to={`/profile`} className="btn"><p>Perfil</p><span className="material-symbols-outlined">person</span></Link></li>
             </ul>
         </div>
     );
