@@ -10,8 +10,9 @@ jobs:
 
     
     steps:
-      - name: Clone repository
       - uses: actions/checkout@v2
+ 
+
      
       - name: run install dependecies frontend and run
         run: |
