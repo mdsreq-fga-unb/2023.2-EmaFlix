@@ -42,7 +42,7 @@ Sprint com cliente definido e com foco em levantar requisitos da aplicação web
 | Backlog do produto |  - **Us[1]:** Catalogar Vídeos da plataforma <br> - **Us[2]:** Remover Vídeos da plataforma <br> - **Us[3]:** Assistir Vídeos da plataforma |
 | Sprint Review | - Sem reunião com os cordenadores do IFB (PO) |
 | Sprint Retrospective | - **Pontos Fracos:** Dependência total ao desenvolvimento do player de vídeo trazido pelo backend |
-| User Stories não realizadas |
+| User Stories não realizadas | - Nenhuma das histórias passaram nos critérios de Dod |
 
 ## Sprint 3
 
@@ -50,7 +50,7 @@ Sprint com cliente definido e com foco em levantar requisitos da aplicação web
 
 | Cerimônias do scrum | Detalhes |
 |---------------------|----------|
-| Sprint Planning | 
+| Sprint Planning | - Focada no desenvolvimento e aprimoramento do player de vídeo
 | Backlog do produto |
 | Sprint Review |
 | Sprint Retrospective |
