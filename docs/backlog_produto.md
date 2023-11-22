@@ -14,7 +14,8 @@
 ## Definição de Pronto
 
 1. Critérios de aceitação: Passa pelos critérios de aceitação definidos?.
-2. Se está de acordo com o padrão de codificação definido abaixo.
+2. Testes: Passa por todos os testes necessários definidos.
+3. Se está de acordo com o padrão de codificação definido abaixo.
 
     **Convenção de Nomenclatura:** Use nomes descritivos para variáveis, funções e classes.
 
@@ -35,7 +36,7 @@
 
 ## Critérios de Priorização
 
-O backlog e o critério de priorização, foram organizados e baseados em 3 variáveis: Valor de Negócio (VN), Viabilidade (V) e Criticidade (C). Os itens de backlog foram avaliados com uma pontuação de 1 a 5, indicando sua importância. A prioridade de cada requisito é determinada pela média dos critérios aplicados, calculada como:
+O backlog e o critério de priorização, foram organizados e baseados em 3 variáveis: Valor de Negócio (VN), Viabilidade (V) e Criticidade (C). Os itens de backlog foram avaliados com uma pontuação de 1 a 5 nas três categorias. A prioridade de cada requisito é determinada pela média dos critérios aplicados, calculada como:
 
 **Valor de Negócio:** Importância da história para o cliente.
 
