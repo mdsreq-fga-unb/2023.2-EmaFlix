@@ -20,6 +20,7 @@ async function initPlayer() {
   // Create a Player instance.
   const video = document.getElementById('video');
   const player = new shaka.Player(video);
+
   const tracks = player.getVariantTracks();
   // Populate your UI component with these tracks
   // For example, create a dropdown menu with each track as an option
@@ -28,17 +29,19 @@ async function initPlayer() {
   window.player = player;
 
   // Listen for error events.
-  player.addEventListener('error', onErrorEvent)
+  player.addEventListener('error', onErrorEvent);
 
 // Update your UI on quality change
 player.addEventListener('adaptation', () => {
   const track = player.getVariantTracks().find(t => t.active);
   updateYourUI(track.height); // This is a custom function to update your UI
 });
-
+    var userUrl = location.search;
+    console.log(userUrl)
   // Try to load a manifest.
   // This is an arbitrary URL and should be replaced with your video URL.
   try {
+
     await player.load('http://localhost:8000/video', null, 'video/mp4');
     // This runs if the asynchronous load is successful.
     console.log('The video has now been loaded!');
@@ -58,3 +61,4 @@ function onError(error) {
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+

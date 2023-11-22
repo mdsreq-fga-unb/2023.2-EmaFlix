@@ -5,7 +5,7 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class VideoServer {
+public class VideoRequestHandler {
 
     public static void main(String[] args) throws Exception {
         ExecutorService workingService = Executors.newWorkStealingPool(16);

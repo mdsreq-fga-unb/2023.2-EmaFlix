@@ -4,22 +4,25 @@ import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 public class VideoHandler implements HttpHandler {
+
+
 
     @Override
     public void handle(HttpExchange exchange) throws IOException {
         exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "*");
+        exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "windowurl");
+
         String filePath = "C:/Users/pagan/EmaFlix/Backend/src/main/resources/examples.mp4";
         File file = new File(filePath);
-        System.out.println(file);
         String range = exchange.getRequestHeaders().getFirst("Range");
         long fileLength = file.length();
         System.out.println(fileLength + " file length.");
         System.out.println("range: " + range);
         if (range == null) {
-            // Serve the entire file if no range is specified
-            serveFile(exchange, file, 0, fileLength - 1, fileLength);
+
         } else {
             // Parse the range request
             long start = Long.parseLong(range.replace("bytes=", "").split("-")[0]);
