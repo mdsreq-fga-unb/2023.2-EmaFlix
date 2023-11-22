@@ -27,7 +27,7 @@ Os usuários são principalmente estudantes do IFB, mas também toda a comunidad
 
 ### Objetivo Geral 
 
-Nosso objetivo é implementar um sistema eficiente de organização ao acesso às obras cinematográficas produzidas e disponibilizadas pelo IFB, através da consolidação dessas produções em uma única plataforma.
+O objetivo geral é melhorar a organização de todos os conteúdos cinematográficos produzidos e disponibilizados pela instituição, de forma eficiente. Isso contribuirá para a visualização e centralização da biblioteca disponível para os alunos, além de melhorar a visibilidade dos vídeos produzidos pelos alunos.
 
 ### Objetivos especificos
 

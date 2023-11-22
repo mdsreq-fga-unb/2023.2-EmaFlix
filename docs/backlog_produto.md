@@ -2,6 +2,7 @@
 | Data  | Versão | Descrição | Autor |
 | ---   | ------ | --------- | ----- |
 | 19/10 |  1.0   | Primeira versão do backlog do produto | Todos |
+| 21/11 |  1.1  | Refinamento do backlog e críterios de aceitação inseridos na documentação | Todos |
 
 ## Definição de Preparado
 
@@ -36,6 +37,12 @@
 
 O backlog e o critério de priorização, foram organizados e baseados em 3 variáveis: Valor de Negócio (VN), Viabilidade (V) e Criticidade (C). Os itens de backlog foram avaliados com uma pontuação de 1 a 5, indicando sua importância. A prioridade de cada requisito é determinada pela média dos critérios aplicados, calculada como:
 
+**Valor de Negócio:** Importância da história para o cliente.
+
+**Viabilidade:** A viabilidade é a medida da capacidade de um requisito ser implementado. Ela é determinada pela disponibilidade de recursos, como tempo, orçamento e pessoal.
+
+**Criticidade:** A criticidade é a medida da importância de um requisito para o funcionamento do sistema.
+
 * **(VN + V + C)/3**
 
 Além disso, foi usado este critério para definir os produtos MPV 1 e o MPV 2
@@ -48,12 +55,10 @@ Requisitos funcionais são um conjunto de especificações que delineiam o compo
 
 | Temas                     | Épicos                     | Numeração | User Story                                                                                                                                                                     | Valor de negócio | Viabilidade | Criticidade | Total |
 |---------------------------|----------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------|-------------|-------|
-| Gerenciamento de Conteudo | Gerenciamento de material  | 1         | Eu, como administrador, posso catalogar os vídeos já existentes, para manter a plataforma organizada e facilitar a pesquisa de conteúdo para os estudantes.                    | 5                | 4           | 4           | 5     |
+| Gerenciamento de Conteudo | Gerenciamento de material  | 1         | Eu, como administrador, posso catalogar os vídeos já existentes, para manter a plataforma organizada e facilitar a pesquisa de conteúdo para os estudantes.                  | 5                | 5           | 5           | 5     |
 | Gerenciamento de Conteudo | Gerenciamento de material  | 2         | Eu, como administrador, posso remover videos do ar, para garantir a conformidade com diretrizes e remover conteúdo inadequado ou não autorizado.                               | 5                | 3           | 5           | 4,3   |
 | Gerenciamento de Usuarios | Acesso por role            | 3         | Eu, como estudante, posso assistir aos videos da plataforma, para aproveitar o conteúdo educacional para os alunos.                                                            | 5                | 5           | 5           | 4,3   |
-| Gerenciamento de Conteudo | Navegabiliadade de Usuario | 4         | Eu, como estudante, posso buscar video por nome, para facilitar a pesquisa e localização de conteúdo específico.                                                               | 4                | 5           | 3           | 4     |
-| Gerenciamento de Conteudo | Navegabiliadade de Usuario | 5         | Eu, como estudante, posso buscar um video por genero, para melhorar a experiência do usuário, permitindo a busca de vídeos por categoria.                                      | 3                | 5           | 3           | 3,6   |
-| Gerenciamento de Conteudo | Navegabiliadade de Usuario | 6         | Eu, como estudante, posso buscar um video por faixa etaria, para garantir que o conteúdo seja apropriado para a idade do aluno.                                                | 3                | 5           | 3           | 3,6   |
+| Gerenciamento de Conteudo | Navegabiliadade de Usuario | 6         | Eu, como estudante, posso buscar vídeo por nome, gênero e faixa etária para selecionar apenas conteúdos específicos que estou buscando.    | 3                | 5           | 3           | 3,6   |
 | Gerenciamento de Usuarios | Acesso por role            | 7         | Eu, como administrador, posso fornecer permissões a outros usuarios, para gerenciar o acesso de usuários e colaboradores à plataforma.                                         | 2                | 5           | 3           | 3,3   |
 | Gerenciamento de Usuarios | Acesso por role            | 8         | Eu, como administrador, posso remover permissões de outros usuarios, para manter o controle de quem tem acesso a recursos específicos da plataforma.                           | 2                | 5           | 3           | 3,3   |
 | Gerenciamento de Conteudo | Navegabiliadade de Usuario | 9         | Eu, como estudante, posso buscar um video por tag, para ajudar os estudantes a encontrar conteúdo relacionado a tópicos específicos.                                           | 2                | 5           | 3           | 3,3   |
@@ -68,31 +73,27 @@ Requisitos funcionais são um conjunto de especificações que delineiam o compo
 
 ## MVP 1
 
-| Temas                        | Épicos                   | User Story                                                                                                                              | Valor de negócio | Viabilidade | Criticidade | Total |
-|------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------|--------------|--------------|-------|
-| Gerenciamento de Conteudo    | Gerenciamento de material| Eu, como administrador, posso catalogar os vídeos já existentes, para manter a plataforma organizada e facilitar a pesquisa de conteúdo para os estudantes. | 5                | 4            | 4            | 5     |
-| Gerenciamento de Conteudo    | Gerenciamento de material| Eu, como administrador, posso remover videos do ar, para garantir a conformidade com diretrizes e remover conteúdo inadequado ou não autorizado.             | 5                | 3            | 5            | 4,3   |
-| Gerenciamento de Usuarios    | Acesso por role          | Eu, como estudante, posso assistir aos videos da plataforma, para aproveitar o conteúdo educacional para os alunos.                           | 5                | 5            | 5            | 4,3   |
-| Gerenciamento de Conteudo    | Navegabiliadade de Usuario| Eu, como estudante, posso buscar video por nome, para facilitar a pesquisa e localização de conteúdo específico.                           | 4                | 5            | 3            | 4     |
-| Gerenciamento de Conteudo    | Navegabiliadade de Usuario| Eu, como estudante, posso buscar um video por genero, para melhorar a experiência do usuário, permitindo a busca de vídeos por categoria.  | 3                | 5            | 3            | 3,6   |
-| Gerenciamento de Conteudo    | Navegabiliadade de Usuario| Eu, como estudante, posso buscar um video por faixa etaria, para garantir que o conteúdo seja apropriado para a idade do aluno.          | 3                | 5            | 3            | 3,6   |
-| Gerenciamento de Usuarios    | Acesso por role          | Eu, como administrador, posso fornecer permissões a outros usuarios, para gerenciar o acesso de usuários e colaboradores à plataforma.   | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Usuarios    | Acesso por role          | Eu, como administrador, posso remover permissões de outros usuarios, para manter o controle de quem tem acesso a recursos específicos da plataforma. | 2                | 5            | 3            | 3,3   |
+| Temas                     | Épicos                     | Numeração | User Story                                                                                                                                                                     | Valor de negócio | Viabilidade | Criticidade | Total |
+|---------------------------|----------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------|-------------|-------|
+| Gerenciamento de Conteudo | Gerenciamento de material  | 1         | Eu, como administrador, posso catalogar os vídeos já existentes, para manter a plataforma organizada e facilitar a pesquisa de conteúdo para os estudantes.                  | 5                | 5           | 5           | 5     |
+| Gerenciamento de Conteudo | Gerenciamento de material  | 2         | Eu, como administrador, posso remover videos do ar, para garantir a conformidade com diretrizes e remover conteúdo inadequado ou não autorizado.                               | 5                | 3           | 5           | 4,3   |
+| Gerenciamento de Usuarios | Acesso por role            | 3         | Eu, como estudante, posso assistir aos videos da plataforma, para aproveitar o conteúdo educacional para os alunos.                                                            | 5                | 5           | 5           | 4,3   |
+| Gerenciamento de Conteudo | Navegabiliadade de Usuario | 4         | Eu, como estudante, posso buscar vídeo por nome, gênero e faixa etária para selecionar apenas conteúdos específicos que estou buscando.    | 3                | 5           | 3           | 3,6   |
+| Gerenciamento de Usuarios | Acesso por role            | 5         | Eu, como administrador, posso fornecer permissões a outros usuarios, para gerenciar o acesso de usuários e colaboradores à plataforma.                                         | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Usuarios | Acesso por role            | 6         | Eu, como administrador, posso remover permissões de outros usuarios, para manter o controle de quem tem acesso a recursos específicos da plataforma.                           | 2                | 5           | 3           | 3,3   |
 
 ## MVP 2
-
-| Temas                        | Épicos                   | User Story                                                                                                                              | Valor de negócio | Viabilidade | Criticidade | Total |
-|------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------|--------------|--------------|-------|
-| Gerenciamento de Conteudo    | Navegabiliadade de Usuario| Eu, como estudante, posso buscar um video por tag, para ajudar os estudantes a encontrar conteúdo relacionado a tópicos específicos.     | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Conteudo    | Navegabiliadade de Usuario| Eu, como estudante, posso salvar um video numa lista para assistir mais tarde,  para permitir que os estudantes organizem e acessem o conteúdo que desejam ver posteriormente. | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Conteudo    | Interação de Comunidade  | Eu, como estudante, posso comentar em um vídeo, para alimentar a interação dos alunos e a discussão em torno do conteúdo.                | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Conteudo    | Interação de Comunidade  | Eu, como estudante, posso avaliar um video com uma nota, para fornecer feedback sobre a qualidade do conteúdo e ajudar outros alunos na escolha de vídeos. | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Conteudo    | Interação de Comunidade  | Eu, como adminsitrador, posso comentar um video, para participar de discussões e fornecer informações adicionais quando necessário.     | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Conteudo    | Interação de Comunidade  | Eu, como adminsitrador, posso marcar um comentario como relevante, para destacar comentários úteis e informativos na plataforma.       | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Conteudo    | Interação de Comunidade  | Eu, como administrador, posso remover um comentario da plataforma, para manter a plataforma livre de comentários inadequados ou spam.  | 2                | 5            | 3            | 3,3   |
-| Gerenciamento de Usuarios    | Login de Usuario         | Eu, como Estudante, posso logar com minhas credenciais, para garantir que apenas usuários autorizados acessem a plataforma.             | 2                | 5            | 2            | 3     |
-| Gerenciamento de Usuarios    | Login de Usuario         | Eu, como Estudante, posso recuperar minhas credenciais, permitir que os alunos recuperem o acesso à plataforma em caso de esquecimento de senha ou problemas de login. | 2                | 5            | 2            | 3     |
-
+| Temas                     | Épicos                     | Numeração | User Story                                                                                                                                                                     | Valor de negócio | Viabilidade | Criticidade | Total |
+|---------------------------|----------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------|-------------|-------|
+| Gerenciamento de Conteudo | Navegabiliadade de Usuario | 7         | Eu, como estudante, posso buscar um video por tag, para ajudar os estudantes a encontrar conteúdo relacionado a tópicos específicos.                                           | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Conteudo | Navegabiliadade de Usuario | 8        | Eu, como estudante, posso salvar um video numa lista para assistir mais tarde,  para permitir que os estudantes organizem e acessem o conteúdo que desejam ver posteriormente. | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Conteudo | Interação de Comunidade    | 9        | Eu, como estudante, posso comentar em um vídeo, para alimentar a interação dos alunos e a discussão em torno do conteúdo.                                                      | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Conteudo | Interação de Comunidade    | 10        | Eu, como estudante, posso avaliar um video com uma nota, para fornecer feedback sobre a qualidade do conteúdo e ajudar outros alunos na escolha de vídeos.                     | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Conteudo | Interação de Comunidade    | 11        | Eu, como adminsitrador, posso comentar um video, para participar de discussões e fornecer informações adicionais quando necessário.                                            | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Conteudo | Interação de Comunidade    | 12        | Eu, como adminsitrador, posso marcar um comentario como relevante, para destacar comentários úteis e informativos na plataforma.                                               | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Conteudo | Interação de Comunidade    | 13        | Eu, como administrador, posso remover um comentario da plataforma, para manter a plataforma livre de comentários inadequados ou spam.                                          | 2                | 5           | 3           | 3,3   |
+| Gerenciamento de Usuarios | Login de Usuario           | 14        | Eu, como Estudante, posso logar com minhas credenciais, para garantir que apenas usuários autorizados acessem a plataforma.                                                    | 2                | 5           | 2           | 3     |
+| Gerenciamento de Usuarios | Login de Usuario           | 15        | Eu, como Estudante, posso recuperar minhas credenciais, permitir que os alunos recuperem o acesso à plataforma em caso de esquecimento de senha ou problemas de login.         | 2                | 5           | 2           | 3     |
 
 ## Requisitos não funcionais
 

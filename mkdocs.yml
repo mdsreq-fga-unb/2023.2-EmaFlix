@@ -9,8 +9,10 @@ nav:
       - Lições aprendidas : "licoesaprendidas.md"
   - Backlog do produto:
     - Backlog do produto: "backlog_produto.md"
+    - Critérios de aceitação: "criterios.md"
   - Padrões de Software: "padroesdesoftware.md"
-  - Entregas: "sprints.md"
+  - Entregas: "entregas.md"
+  - Sprints: "sprints.md"
   - Referências bibliográficas: "referencias.md"
 
 theme: 
