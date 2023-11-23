@@ -3,6 +3,8 @@ A Aplicação é monolítica com arquitetura MVC.
 
 A aplicação segue arquitetura monolítica, adotando o padrão Modelo-Visão-Controlador (MVC).
 
+![1](docs/../img/Arquitetura.svg)
+
 ## Padrões de interface
 
 Esses padrões são desenvolvidos com base em princípios de usabilidade, acessibilidade, experiência do usuário e design centrado no usuário.
