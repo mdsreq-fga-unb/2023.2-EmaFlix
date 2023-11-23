@@ -50,15 +50,15 @@ Sprint com cliente definido e com foco em levantar requisitos da aplicação web
 
 | Cerimônias do scrum | Detalhes |
 |---------------------|----------|
-| Sprint Planning | - Focada no desenvolvimento e aprimoramento do player de vídeo
-| Backlog do produto |
-| Sprint Review |
+| Sprint Planning | - Focada no desenvolvimento e aprimoramento do player de vídeo. |
+| Backlog do produto | - **Us[3]:** Assistir Vídeos da plataforma. |
+| Sprint Review | 
 | Sprint Retrospective |
 | User Stories não realizadas |
 
 ## Sprint 4
 
-26/11 a 10/12
+25/11 a 10/12
 
 | Cerimônias do scrum | Detalhes |
 |---------------------|----------|

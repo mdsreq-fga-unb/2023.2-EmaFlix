@@ -1,7 +1,7 @@
 ## Arquitetura
 A Aplicação é monolítica com arquitetura MVC.
 
-A decisão foi da equipe e foi-se escolhida a arquitetura monolítica pela limitação de hardware existente, além da rede ser local, e a não necessidade de escalabilidade do serviço. Para uma melhor organização e estruturação de código, foi escolhido o estilo MVC.
+A aplicação segue arquitetura monolítica, adotando o padrão Modelo-Visão-Controlador (MVC).
 
 ## Padrões de interface
 
