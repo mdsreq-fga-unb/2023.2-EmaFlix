@@ -15,7 +15,7 @@ public class VideoHandler implements HttpHandler {
         exchange.getResponseHeaders().add("Access-Control-Allow-Origin", "*");
         exchange.getResponseHeaders().add("Access-Control-Allow-Headers", "windowurl");
 
-        String filePath = "/home/danilo/Área de trabalho/developer-integration/2023.2-EmaFlix-developer/Backend/src/main/resources/examples.mp4";
+        String filePath = "C:\\Unb\\4 - Semestre\\2023.2-EmaFlix\\Emaflix\\Backend\\src\\main\\resources\\examples.mp4";
         File file = new File(filePath);
         String range = exchange.getRequestHeaders().getFirst("Range");
         long fileLength = file.length();

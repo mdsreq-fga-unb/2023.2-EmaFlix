@@ -1,0 +1,23 @@
+.card {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.card h2 {
+    font-family: inter;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+.card-img {
+    width: 200px;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%);
+}

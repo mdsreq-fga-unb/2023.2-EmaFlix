@@ -13,6 +13,7 @@ import Notification from './routes/pages/Notification.jsx'
 
 
 import './index.css'
+import Player from './routes/pages/Player.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/notification",
         element: <Notification/>
+      },
+      {
+        path: "/player",
+        element: <Player/>
       }
     ]
   }

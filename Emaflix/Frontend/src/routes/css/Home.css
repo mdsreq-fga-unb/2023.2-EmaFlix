@@ -1,10 +1,9 @@
-.box {
-    height: 850px;
-    background-color: gray;
+.cards {
+    display: flex;
+
 }
 
-.player {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.background-color {
+    background-color: #040714;
+    height: 1920px;
 }

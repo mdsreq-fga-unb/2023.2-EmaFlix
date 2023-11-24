@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import shaka from 'shaka-player';
+import Poster from '../../img/Emaflix_clear.png'
 
 const VideoPlayer = () => {
   const [player, setPlayer] = useState(null);
@@ -67,7 +68,7 @@ const VideoPlayer = () => {
 
   return (
     <div>
-      <video ref={videoRef} width="1080" controls autoplay />
+      <video ref={videoRef} poster={Poster}  width="1080" controls autoplay />
     </div>
   );
 };
