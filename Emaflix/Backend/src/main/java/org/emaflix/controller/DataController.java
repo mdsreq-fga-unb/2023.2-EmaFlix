@@ -10,7 +10,10 @@ import org.bson.codecs.configuration.CodecProvider;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
 import org.emaflix.model.Movie;
+import org.emaflix.view.Content;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Consumer;
@@ -77,6 +80,14 @@ public class DataController extends EmaflixController {
                 movies.put(movie.getContentId(), movie);
             }
         }
+    }
+
+    public Collection<Content> getAllContent(){
+        Collection<Content> contents = new ArrayList<>();
+        for (Movie value : this.movies.values()){
+            contents.add(Content.fromMovie(value));
+        }
+        return contents;
     }
 
     private void wrapMongoOperation(Consumer<MongoClient> consumer){
