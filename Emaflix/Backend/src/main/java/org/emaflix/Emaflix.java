@@ -2,10 +2,13 @@ package org.emaflix;
 
 import com.sun.net.httpserver.HttpServer;
 import org.emaflix.controller.DataController;
+import org.emaflix.controller.EmaflixController;
+import org.emaflix.controller.HomeController;
 import org.emaflix.controller.VideoController;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -26,9 +29,8 @@ public class Emaflix {
 
     private static void initControllers(HttpServer httpServer) {
         DataController dataController = new DataController(httpServer);
-        VideoController videoController = new VideoController(dataController, httpServer);
         dataController.register();
-        videoController.register();
+        Arrays.asList(new VideoController(httpServer, dataController), new HomeController(httpServer, dataController)).forEach(EmaflixController::register);
     }
 
 }

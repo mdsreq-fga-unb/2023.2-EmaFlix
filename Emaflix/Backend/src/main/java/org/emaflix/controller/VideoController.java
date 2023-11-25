@@ -9,7 +9,7 @@ public class VideoController extends EmaflixController {
 
     private final DataController contentController;
 
-    public VideoController(DataController contentController, HttpServer httpServer){
+    public VideoController(HttpServer httpServer, DataController contentController){
         super(httpServer);
         this.contentController = contentController;
     }

@@ -45,7 +45,7 @@ public class DataController extends EmaflixController {
         this.cacheAll();
     }
 
-    public void deleteMovie(Movie movie){
+    public void deleteMovie(Movie movie) {
         wrapMongoOperation(mongoClient -> {
             MongoDatabase database = mongoClient.getDatabase("emaflix").withCodecRegistry(pojoCodecRegistry);
             MongoCollection<Movie> collection = database.getCollection("movies", Movie.class);
@@ -53,7 +53,7 @@ public class DataController extends EmaflixController {
         });
     }
 
-    public void updateMovie(Movie movie){
+    public void updateMovie(Movie movie) {
         wrapMongoOperation(mongoClient -> {
             MongoDatabase database = mongoClient.getDatabase("emaflix").withCodecRegistry(pojoCodecRegistry);
             MongoCollection<Movie> collection = database.getCollection("movies", Movie.class);
@@ -61,7 +61,7 @@ public class DataController extends EmaflixController {
         });
     }
 
-    public void insertMovie(Movie movie){
+    public void insertMovie(Movie movie) {
         wrapMongoOperation(mongoClient -> {
             MongoDatabase database = mongoClient.getDatabase("emaflix").withCodecRegistry(pojoCodecRegistry);
             MongoCollection<Movie> collection = database.getCollection("movies", Movie.class);
@@ -69,20 +69,20 @@ public class DataController extends EmaflixController {
         });
     }
 
-    private void cacheAll(){
+    private void cacheAll() {
         String connUrl = ";";
         System.setProperty("mongouri", connUrl);
         String mongoConnURI = System.getProperty("mongouri");
         try (MongoClient mongoClient = MongoClients.create(mongoConnURI)) {
             MongoDatabase database = mongoClient.getDatabase("emaflix").withCodecRegistry(pojoCodecRegistry);
             MongoCollection<Movie> collection = database.getCollection("movies", Movie.class);
-            for (Movie movie : collection.find()){
+            for (Movie movie : collection.find()) {
                 movies.put(movie.getContentId(), movie);
             }
         }
     }
 
-    public Collection<Content> getAllContent(){
+    public Collection<Content> getAllContent() {
         Collection<Content> contents = new ArrayList<>();
         for (Movie value : this.movies.values()){
             contents.add(Content.fromMovie(value));
@@ -90,7 +90,7 @@ public class DataController extends EmaflixController {
         return contents;
     }
 
-    private void wrapMongoOperation(Consumer<MongoClient> consumer){
+    private void wrapMongoOperation(Consumer<MongoClient> consumer) {
         String mongoConnURI = System.getProperty("mongouri");
         try (MongoClient mongoClient = MongoClients.create(mongoConnURI)) {
             consumer.accept(mongoClient);
