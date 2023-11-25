@@ -1,0 +1,32 @@
+.box {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+
+.poster-carrossel {
+    max-width: 600px;
+    
+}
+
+.swipe {
+    margin-top: 20px;
+}
+
+.container-poster {
+    max-width: 700px;
+}
+
+.container-poster h2 {
+    color: white;
+    text-align: center;
+    font-family: inter;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide-active .container-poster img {
+    max-width: 700px;
+    transition: 500ms;
+}

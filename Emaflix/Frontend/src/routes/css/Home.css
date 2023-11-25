@@ -1,9 +1,11 @@
 .cards {
     display: flex;
-
 }
 
 .background-color {
     background-color: #040714;
     height: 1920px;
+}
+.margin {
+    padding-top: 1rem;
 }
