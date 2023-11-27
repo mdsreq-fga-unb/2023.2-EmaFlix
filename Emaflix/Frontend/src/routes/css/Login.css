@@ -1,0 +1,75 @@
+.login-all {
+    display: flex;
+}
+
+.container-login-tela {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login {
+    background-color: #040714;
+    color: white;    
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h1 {
+    color: white;
+    font-size: 45px;
+    letter-spacing: 10px;
+    margin-bottom: 25px;
+}
+
+.login h2 {
+    font-family: inter;
+}
+
+.login input {
+    border: none;
+    padding: 10px 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4cae4f;
+    border-radius: 10px;
+    background-color:#040714 ;
+    color: white;
+    font-family: inter;
+}
+
+.login label {
+    font-family: inter;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.Login-entrar {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+    color: white;
+    background-color: #4cae4f;
+}
+
+.container-logo-tela {
+    width: 50vw;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #4cae4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

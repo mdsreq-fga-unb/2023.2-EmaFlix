@@ -14,14 +14,19 @@ import Notification from './routes/pages/Notification.jsx'
 
 import './index.css'
 import Player from './routes/pages/Player.jsx'
+import Login from './routes/pages/Login.jsx'
 
 const router = createBrowserRouter([
+  {
+    element: <Login/>,
+    path:"/login"
+  },
   {
     element: <App/>,
     children: [
       {
         path: "/",
-        element: <Home/>,
+        element: <Home/>
       },
       {
         path: "/filter",
