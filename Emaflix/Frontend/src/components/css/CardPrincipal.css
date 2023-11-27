@@ -1,0 +1,10 @@
+.card-principal {
+    text-align: center;
+    padding-bottom: 4vh;
+    padding-top:3vh ;
+}
+
+.poster-img {
+    border-radius: 8px;
+    max-height: 350px;
+}
