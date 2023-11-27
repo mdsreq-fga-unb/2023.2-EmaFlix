@@ -2,10 +2,20 @@
     display: flex;
 }
 
-.background-color {
+.home {
     background-color: #040714;
     height: 1920px;
 }
-.margin {
-    padding-top: 1rem;
+
+.titulos-generos-home {
+    font-family: inter;
+    color: #4cae4f;
+    margin-left: 2vw;
+    margin-bottom:3vh ;
+}
+
+.list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3vh;
 }

@@ -1,34 +1,23 @@
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import React from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import "../css/Carrossel.css"
-
 
 import Poster from "../../img/homem-aranha-poster-teste.jpg"
 
-import { Pagination, Navigation } from 'swiper/modules';
+const handleDragStart = (e) => e.preventDefault();
 
-// Import Swiper styles
-import 'swiper/css';
 
-export default () => {
-    return (
-        <Swiper
-            spaceBetween={50}
-            slidesPerView={2.5}
-            centeredSlides={true}
-            pagination={{
-                clickable: true,
-                type: 'fraction'
-            }}
-            modules={[Pagination, Navigation]}
-            onSwiper={() => console.log()}
-        >
-            <SwiperSlide><div className="gradient"></div><div className="container-poster"><img className='poster-carrossel' src={Poster} /><h2>Homem Aranha - No Way casa</h2></div></SwiperSlide>
-            <SwiperSlide><div className="container-poster"><img className='poster-carrossel' src={Poster} /><h2>Homem Aranha - No Way casa</h2></div></SwiperSlide>
-            <SwiperSlide><div className="container-poster"><img className='poster-carrossel' src={Poster} /><h2>Homem Aranha - No Way casa</h2></div></SwiperSlide>
-            <SwiperSlide><div className="container-poster"><img className='poster-carrossel' src={Poster} /><h2>Homem Aranha - No Way casa</h2></div></SwiperSlide>
-            ...
-        </Swiper>
-    );
-};
+const items = [
+  <img className="imagem-carrosel-responsive" src={Poster} onDragStart={handleDragStart} role="presentation" />,
+  <img className="imagem-carrosel-responsive"src={Poster} onDragStart={handleDragStart} role="presentation" />,
+  <img className="imagem-carrosel-responsive" src={Poster} onDragStart={handleDragStart} role="presentation" />,
+];
+
+const Carrossel = () => {
+  return (
+    <AliceCarousel autoWidth={true} disableButtonsControls={true} mouseTracking infinite={true} autoPlayInterval={3000} autoPlay={true} items={items} />
+  );
+}
+
+export default Carrossel

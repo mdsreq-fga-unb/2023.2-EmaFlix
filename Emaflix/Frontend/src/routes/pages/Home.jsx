@@ -1,27 +1,31 @@
-import { useEffect, useState } from "react";
-
-import { Link } from "react-router-dom";
-
-import ImgCard from "../../img/homem-aranha-poster-teste.jpg"
-
 import "../css/Home.css"
 
-import Carousel from "../../components/pages/Carrossel.jsx";
+import Carrossel from "../../components/pages/Carrossel.jsx";
 
-import Card from "../../components/pages/Card";
+import Cards from "../../components/pages/Card";
 
-const posters = [
-    "../../img/homem-aranha-poster-teste.jpg",
-]
 
 const Home = () => {
     return (
-        <div className="background-color">
-            <div className="margin">
-        <Carousel/>
+        <div className="home">
+            <Carrossel />
+            <div className="home-cards">
+                <h2 className="titulos-generos-home">Títulos disponíveis</h2>
+                <div className="list-cards">
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                <Cards/>
+                </div>
+                
+            </div>
         </div>
-        </div>
-        
+
     )
 };
 
