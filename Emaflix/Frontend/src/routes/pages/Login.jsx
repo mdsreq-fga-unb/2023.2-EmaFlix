@@ -33,7 +33,7 @@ const Login = () => {
                             />
                         </div>
                         <div className='container-input'>
-                            <label htmlFor="password">Senha:</label>
+                            <label htmlFor="password">Senha</label>
                             <input
                                 type="password"
                                 id="password"

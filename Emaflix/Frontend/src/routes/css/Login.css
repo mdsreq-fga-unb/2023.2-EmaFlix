@@ -52,16 +52,18 @@
 .container-input {
     display: flex;
     flex-direction: column;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .Login-entrar {
     border: none;
     border-radius: 8px;
-    padding: 10px 40px;
+    padding: 2vh 4vw;
     color: white;
     background-color: #4cae4f;
+    font-family: inter;
+    font-size: 15px;
 }
 
 .container-logo-tela {
