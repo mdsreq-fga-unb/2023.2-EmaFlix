@@ -16,14 +16,6 @@ const Home = () => {
                 <h2 className="titulos-generos-home">Títulos disponíveis</h2>
                 <div className="list-cards">
                 <Cards/>
-                <Cards/>
-                <Cards/>
-                <Cards/>
-                <Cards/>
-                <Cards/>
-                <Cards/>
-                <Cards/>
-                <Cards/>
                 </div>
                 
             </div>

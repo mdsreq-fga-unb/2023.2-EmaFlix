@@ -15,11 +15,17 @@ import Notification from './routes/pages/Notification.jsx'
 import './index.css'
 import Player from './routes/pages/Player.jsx'
 import Login from './routes/pages/Login.jsx'
+import NewLogin from './routes/pages/NewLogin.jsx'
+import MovieSide from "./routes/pages/MovieSide.jsx"
 
 const router = createBrowserRouter([
   {
     element: <Login/>,
     path:"/login"
+  },
+  {
+    element: <NewLogin/>,
+    path:"/new_login"
   },
   {
     element: <App/>,
@@ -43,8 +49,13 @@ const router = createBrowserRouter([
       {
         path: "/player",
         element: <Player/>
-      }
-    ]
+      },
+      {
+        path: "/video/:id",
+        element: <MovieSide/>,
+      },
+    ],
+    
   }
 ])
 
