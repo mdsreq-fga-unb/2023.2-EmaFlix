@@ -12,7 +12,7 @@ const Cards = () => {
 
     console.log(videos);
     useEffect(() => {
-      const fetchData = async () => {
+      const getMovies = async () => {
         try {
           const response = await axios.get("http://localhost:3001/videos");
           setVideos(response.data);
@@ -22,7 +22,7 @@ const Cards = () => {
 
         }
       };
-      fetchData();
+      getMovies();
     }, []);
 
   return (

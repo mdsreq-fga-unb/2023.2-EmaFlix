@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import "../css/MovieSide.css"
+import VideoPlayer from '../../components/pages/VideoPlayer';
 
-const VideoDetail = ({ match }) => {
-  const { id } = useParams;
+const MovieSide = () => {
+    const { id } = useParams();
+    const [moviesPath, setMoviesPath] = useState([]);
 
-  return (
-    <div>
-      <h1>Detalhes do Vídeo {id}</h1>
-      {/* Mostrar os detalhes do vídeo */}
-    </div>
-  );
+    useEffect(() => {
+        const getPathMovies = async () => {
+            try {
+                const response = await axios.get("http://localhost:3001/movies-path");
+                setMoviesPath(response.data.moviespath);
+
+            } catch (error) {
+                console.log("erro em buscar conteúdo");
+
+            }
+        };
+        getPathMovies();
+    }, []);
+
+    console.log(id)
+
+    return (
+        <>
+            {moviesPath.map((movie) => (
+                <div className="video-container">
+                    <h2>{movie.path}</h2>
+                    <VideoPlayer className="video-player" />
+                </div>
+            ))
+            }
+        </>
+    );
 };
 
-export default VideoDetail;
+export default MovieSide;

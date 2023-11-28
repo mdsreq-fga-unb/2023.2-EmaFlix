@@ -1,0 +1,7 @@
+.video-player {
+    max-height: 30vh;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+}
