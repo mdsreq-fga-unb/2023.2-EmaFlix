@@ -1,5 +1,7 @@
 .navbar {
-    padding: 1vh 1vw;
+    width: 100%;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
     background-color: #040714;
     display: flex;
     justify-content: space-between;

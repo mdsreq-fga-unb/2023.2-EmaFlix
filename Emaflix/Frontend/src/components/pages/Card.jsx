@@ -14,7 +14,7 @@ const Cards = () => {
     useEffect(() => {
       const getMovies = async () => {
         try {
-          const response = await axios.get("http://localhost:3001/videos");
+          const response = await axios.get("http://localhost:3002/videos");
           setVideos(response.data);
 
         } catch (error) {

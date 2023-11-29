@@ -68,7 +68,7 @@ const VideoPlayer = () => {
 
   return (
     <div>
-      <video ref={videoRef} poster={Poster} height={400} controls autoplay />
+      <video ref={videoRef} poster={Poster} height={400} width={750} controls autoplay />
     </div>
   );
 };
