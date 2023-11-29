@@ -1,0 +1,24 @@
+.filter {
+    background-color: #040714;
+}
+.filter h2 {
+    color: white;
+    font-family: inter;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+.filter input {
+    border: none;
+    padding: 2vh 1vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4cae4f;
+    border-radius: 8px;
+    background-color:#040714 ;
+    color: white;
+    font-family: inter;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    width: 50%;
+}
