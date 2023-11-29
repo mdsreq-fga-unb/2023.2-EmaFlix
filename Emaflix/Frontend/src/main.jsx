@@ -17,6 +17,7 @@ import Player from './routes/pages/Player.jsx'
 import Login from './routes/pages/Login.jsx'
 import NewLogin from './routes/pages/NewLogin.jsx'
 import MovieSide from "./routes/pages/MovieSide.jsx"
+import VideoPlayer from './components/pages/VideoPlayer.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/player",
-        element: <Player/>
+        element: <VideoPlayer/>
       },
       {
         path: "/video/:id",
