@@ -1,5 +1,6 @@
 .filter {
     background-color: #040714;
+    height: 1920px;
 }
 .filter h2 {
     color: white;
@@ -10,15 +11,30 @@
 
 .filter input {
     border: none;
-    padding: 2vh 1vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-left: 20px;
     border: 2px solid #4cae4f;
     border-radius: 8px;
     background-color:#040714 ;
     color: white;
     font-family: inter;
-    margin-left: 2vw;
-    margin-bottom: 2vh;
     width: 50%;
+    height: 6vh;
+}
+
+.pesquisa-button {
+    width: 3vw;
+    height: 6vh;
+    border: none;
+    border-radius: 8px;
+    background-color:#4cae4f ;
+    color: white;
+    font-family: inter;
+}
+
+.pesquisa {
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
 }

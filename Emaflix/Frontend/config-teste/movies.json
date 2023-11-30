@@ -3,15 +3,15 @@
         {
         "ContentId": "1",
         "title": "Spider-man Aranhaverso",
-        "age": "12",
+        "age": 12,
         "tags":["ação", "alunos"],
         "poster": "../../img/Card - 1000 x 670.png",
         "genro": ["Ação", "Aventura"]
     },
     {
         "ContentId": "2",
-        "title": "Spider-man Aranhaverso",
-        "age": "12",
+        "title": "Homem-aranha",
+        "age": 12,
         "tags":["ação", "alunos"],
         "poster": "../../img/Card - 1000 x 670.png",
         "genro": ["Ação", "Aventura"]
