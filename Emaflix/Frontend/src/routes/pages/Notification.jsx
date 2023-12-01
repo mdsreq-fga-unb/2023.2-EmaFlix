@@ -7,7 +7,7 @@ import "../css/Home.css"
 const Notification = () => {
     return (
         <div className="box">
-            <h1>Notification</h1>
+            <h1>Meus vídeos</h1>
         </div>
     )
 };
