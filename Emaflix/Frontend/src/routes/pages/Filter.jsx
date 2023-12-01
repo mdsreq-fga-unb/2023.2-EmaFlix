@@ -3,13 +3,12 @@ import Cards from "../../components/pages/Card.jsx";
 import "../css/Filter.css";
 
 const Filter = () => {
-    const item = "vida"
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
-
+  console.log("Item de pesquisa");
   console.log(searchTerm);
 
   return (
@@ -27,10 +26,9 @@ const Filter = () => {
           <span className="material-symbols-outlined">search</span>
         </button>
       </div>
-
-      <h2>Títulos encontrados</h2>
+      <h2 className="Title-find">Títulos encontrados</h2>
       <div className="list-cards">
-        <Cards filtros={item}/>
+        <Cards filtros={searchTerm}/>
       </div>
     </div>
   );

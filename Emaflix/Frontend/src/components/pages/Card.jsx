@@ -21,34 +21,42 @@ const Cards = ({ filtros }) => {
   }, []);
 
   useEffect(() => {
-    if (videos.length > 0) {
       const filtered = videos.filter(applyFilters);
       setFilteredVideos(filtered);
-    }
   }, [videos, filtros]);
+
+  console.log(filtros)
 
   const applyFilters = (video) => {
     if (!filtros) {
       return true;
     }
+
+    console.log(filtros)
+
+    const title = filtros;
+    const age = filtros;
+    const tags = filtros;
+    const genro = filtros;
+
+    console.log("O title é " + title);
+    console.log(video.title)
   
-    const { title, age, tags, genro } = filtros;
-  
-    if (title && !video.title.toLowerCase().includes(title.toLowerCase())) {
-      return false;
+    if (title && video.title.toLowerCase().includes(title.toLowerCase())) {
+      return true;
     }
   
-    if (age && video.age.toString() !== age.toString()) {
-      return false;
+    if (age && video.age.toString() === age.toString()) {
+      return true;
     }
   
-    if (tags && tags.length > 0) {
-      const tagMatch = tags.some(tag => !video.tags.includes(tag));
+    if (tags && video.tags) {
+      const tagMatch = video.tags.some(videoTag => tags.includes(videoTag.toLowerCase()));
       if (tagMatch) {
-        return false;
+        return true;
       }
     }
-  
+
     if (genro && !video.genro.some(g => g.toLowerCase() === genro.toLowerCase())) {
       return false;
     }
@@ -65,10 +73,6 @@ const Cards = ({ filtros }) => {
               <div className="card" key={video.ContentId}>
                 <img className="card-img" src={CardImagem} alt="" srcSet="" />
                 <h2>{video.title}</h2>
-                <p>Age: {video.age}</p>
-                <p>Tags: {video.tags.join(', ')}</p>
-                <p>Poster: {video.poster}</p>
-                <p>Genre: {video.genro}</p>
               </div>
             </Link>
           ))}
