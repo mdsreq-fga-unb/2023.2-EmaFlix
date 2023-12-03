@@ -8,6 +8,8 @@ const Cards = ({ filtros, local }) => {
   const [videos, setVideos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
 
+  const UserLogado = "conf"
+
   useEffect(() => {
     const getMovies = async () => {
       try {
@@ -82,11 +84,14 @@ const Cards = ({ filtros, local }) => {
                 <h2>{video.title}</h2>
                 <div className="card-genero">
                   {video.genro && video.genro.length > 0 && (
-                      <ul>
-                        {video.genro.map((genero, index) => (
-                          <li key={index}>{genero}</li>
-                        ))}
-                      </ul>
+                    <ul>
+                      {video.genro.map((genero, index) => (
+                        <li key={index}>{genero}
+                          {UserLogado === 'conf' && (
+                            <button className="button-delete" onClick={() => handleDelete(video.ContentId)}><span className="material-symbols-outlined">delete</span></button>
+                          )}</li>
+                      ))}
+                    </ul>
                   )}
                 </div>
               </div>

@@ -6,10 +6,20 @@
     max-width: 15vw;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: rgba(80, 40, 40, 0);
-    margin-left:2vw;
+    margin-left: 2vw;
     display: flex;
     flex-direction: column;
 
+}
+
+.button-delete {
+    width: 2vw;
+    height: 4vh;
+    background-color: #b81414;
+    color: white;
+    border: none;
+    margin-left: 1vh;
+    border-radius: 8px;
 }
 
 .card-genero ul li {

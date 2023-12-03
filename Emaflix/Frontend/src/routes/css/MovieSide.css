@@ -57,6 +57,15 @@
     color: white;
 }
 
+.buttonDelete {
+    width: 2vw;
+    height: 4vh;
+    background-color:#b81414 ;
+    color: white;
+    border: none;
+    margin-top: 1vh;
+    border-radius: 8px;
+}
 
 .comments ul {
     display: flex;

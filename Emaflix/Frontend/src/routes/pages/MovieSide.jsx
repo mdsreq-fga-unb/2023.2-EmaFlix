@@ -8,6 +8,7 @@ const MovieSide = () => {
     const { id } = useParams();
     const [moviesPath, setMoviesPath] = useState([]);
     const [videos, setVideos] = useState([]);
+    const userLogado = "conf"
 
     console.log(videos);
     useEffect(() => {
@@ -23,6 +24,8 @@ const MovieSide = () => {
         };
         getMovies();
     }, [id]);
+
+    const DeletarComments = async (videoId) => {}
 
     useEffect(() => {
         const getPathMovies = async () => {
@@ -53,9 +56,10 @@ const MovieSide = () => {
                     <h2>Comentarios: </h2>
                     <ul className="barraderolagem">
                         {moviesPath && moviesPath.comments && moviesPath.comments.map((comment, index) => (
-                            <li key={index}>{comment}</li>
+                            <li key={index}>{comment}{userLogado === 'conf' && (
+                                <button className="buttonDelete" onClick={() => DeletarComments(video.ContentId)}><span className="material-symbols-outlined">delete</span></button>
+                            )}</li>
                         ))}
-
                     </ul>
                     <button className="comentar">Comentar</button>
                 </div>
