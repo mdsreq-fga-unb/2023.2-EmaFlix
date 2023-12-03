@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import CardImagem from '../../img/Card - 1000 x 670.png';
 import { Link } from "react-router-dom";
 
-const Cards = ({ filtros }) => {
+const Cards = ({ filtros, local }) => {
   const [videos, setVideos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
 
@@ -21,8 +21,8 @@ const Cards = ({ filtros }) => {
   }, []);
 
   useEffect(() => {
-      const filtered = videos.filter(applyFilters);
-      setFilteredVideos(filtered);
+    const filtered = videos.filter(applyFilters);
+    setFilteredVideos(filtered);
   }, [videos, filtros]);
 
   console.log(filtros)
@@ -38,31 +38,38 @@ const Cards = ({ filtros }) => {
     const age = filtros;
     const tags = filtros;
     const genro = filtros;
+    const id = filtros;
 
     console.log("O title é " + title);
-    console.log(video.title)
-  
-    if (title && video.title.toLowerCase().includes(title.toLowerCase())) {
-      return true;
-    }
-  
-    if (age && video.age.toString() === age.toString()) {
-      return true;
-    }
-  
-    if (tags && video.tags) {
-      const tagMatch = video.tags.some(videoTag => tags.includes(videoTag.toLowerCase()));
-      if (tagMatch) {
+    console.log(video.title);
+
+    if (local == 1) {
+      if (id && video.ContentId.toString() === id.toString()) {
         return true;
       }
-    }
+    } else {
+      if (title && video.title.toLowerCase().includes(title.toLowerCase())) {
+        return true;
+      }
 
-    if (genro && !video.genro.some(g => g.toLowerCase() === genro.toLowerCase())) {
-      return false;
-    }
-  
-    return true;
-  };
+      if (age && video.age.toString() === age.toString()) {
+        return true;
+      }
+
+
+      if (tags && video.tags) {
+        const tagMatch = video.tags.some(videoTag => tags.includes(videoTag.toLowerCase()));
+        if (tagMatch) {
+          return true;
+        }
+      }
+      if (genro && !video.genro.some(g => g.toLowerCase() === genro.toLowerCase())) {
+        return false;
+      }
+      return true;
+    };
+  }
+
 
   return (
     <>

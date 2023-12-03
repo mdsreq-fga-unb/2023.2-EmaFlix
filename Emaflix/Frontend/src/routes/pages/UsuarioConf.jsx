@@ -34,11 +34,11 @@ const UsuarioConf = () => {
                     <li key={user.id}>
                         <span>
                             <h3>Usuário:&nbsp;</h3>
-                            <h2>{user.user}</h2>
+                            <h3 className="h3-simple">{user.user}</h3>
                         </span>
                         <span>
                             <h3>Ação:&nbsp;</h3>
-                            <h2>{user.actions === 'conf' ? "Gerenciar Vídeos" : "Aluno"}</h2>
+                            <h3 className="h3-simple">{user.actions === 'conf' ? "Gerenciar Vídeos" : "Aluno"}</h3>
                         </span>
                         <select
                             value={user.actions}
@@ -47,7 +47,7 @@ const UsuarioConf = () => {
                             <option value="view">Aluno</option>
                             <option value="conf">Gerenciar Vídeos</option>
                         </select>
-                       <button onClick={() => handleDeletar(user.id)}>Excluir <span className="material-symbols-outlined">delete</span></button>
+                       <button onClick={() => handleDeletar(user.id)}> <span className="material-symbols-outlined">delete</span>Excluir</button>
                     </li>
                 ))}
             </ul>

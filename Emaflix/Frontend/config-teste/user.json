@@ -12,7 +12,7 @@
             "user": "Danilo.Naves",
             "password": "usuarioview",
             "actions": "view",
-            "myvideos": [1,2,3]
+            "myvideos": [1, 2]
         },
         {
             "id": 3,

@@ -32,6 +32,11 @@
     color: white;
     font-family: inter;
     font-weight: 200;
+    font-family: 15px;
+}
+
+.h3-simple {
+    font-weight: 100 !important;
 }
 
 .usuarios-conf ul li span h3 {
@@ -65,4 +70,5 @@
     background-color: #B81414;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
