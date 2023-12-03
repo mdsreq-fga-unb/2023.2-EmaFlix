@@ -2,14 +2,18 @@
     background-color:#040714;
     height: 1920px;
 }
-.video-save h1 {
+.video-save h2 {
     color: white;
     font-family: inter;
-    margin-left: 2vw;
-    margin-bottom: 2vh;
+    margin-left: 2.5vw;
+    margin-bottom: 1vh;
 }
-.videos-salvos{
+.videos-salvos {
     display: flex;
     flex-wrap: wrap;
+}
+.videos-salvos h2 {
+    margin-left: 0;
+    margin-bottom: 0;
 }
 

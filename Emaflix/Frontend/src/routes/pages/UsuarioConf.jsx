@@ -28,7 +28,7 @@ const UsuarioConf = () => {
 
     return (
         <div className="usuarios-conf">
-            <h1>Permissões de usuários</h1>
+            <h2>Permissões de usuários</h2>
             <ul className="list-user">
                 {User.map(user => (
                     <li key={user.id}>

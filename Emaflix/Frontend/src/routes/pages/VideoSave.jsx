@@ -27,7 +27,7 @@ const VideoSave = () => {
     }, [])
     return (
         <div className="video-save">
-            <h1>Meus Vídeos salvos</h1>
+            <h2>Meus Vídeos salvos</h2>
             <div className="videos-salvos">
                 {MeusVideos.map((video) =>
                     <Cards filtros={video} local={1} />

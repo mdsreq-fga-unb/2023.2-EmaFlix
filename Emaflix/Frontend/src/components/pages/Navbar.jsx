@@ -10,7 +10,7 @@ const Navbar = ({UserLogado}) => {
 
     let UsuarioSelecionado = null;
 
-    UserLogado = "view"
+    UserLogado = "conf"
 
     if (UserLogado === 'view') {
         UsuarioSelecionado = (

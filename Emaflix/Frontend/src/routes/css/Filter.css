@@ -5,11 +5,10 @@
 .filter h2 {
     color: white;
     font-family: inter;
-    margin-bottom: 2vh;
 }
 
 .Title-find {
-    margin-left: 2vw;
+    margin-left: 2.5vw;
 }
 
 .filter input {

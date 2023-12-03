@@ -80,6 +80,15 @@ const Cards = ({ filtros, local }) => {
               <div className="card" key={video.ContentId}>
                 <img className="card-img" src={CardImagem} alt="" srcSet="" />
                 <h2>{video.title}</h2>
+                <div className="card-genero">
+                  {video.genro && video.genro.length > 0 && (
+                      <ul>
+                        {video.genro.map((genero, index) => (
+                          <li key={index}>{genero}</li>
+                        ))}
+                      </ul>
+                  )}
+                </div>
               </div>
             </Link>
           ))}

@@ -1,0 +1,60 @@
+.options-painel {
+    display: flex;
+}
+
+.videos-list {
+    background-color: #040714;
+    height: 1920px;
+    width: 50%;
+}
+.videos-list h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.video-conf {
+    background-color: #4cae4f;
+    height: 1920px;
+    width: 50%;
+}
+
+.video-conf h1 {
+    color: white;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-family: inter;
+    text-align: center;
+}
+.video-conf label {
+    color: white;
+    font-family: inter;
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.input-upload {
+    font-family: inter;
+    display: flex;
+    background-color: #040714 !important;
+    text-align: center;
+}
+
+.video-conf div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-conf div select  {
+    font-family: inter;
+    padding: 2vh 10vw;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    background-color: #040714 !important;
+}
+.video-conf div button {
+    margin-top: 2vh;
+    background-color: #040714 !important;
+}
