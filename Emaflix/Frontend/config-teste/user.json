@@ -9,15 +9,15 @@
         },
         {
             "id": 2,
-            "user": "usuarioview",
+            "user": "Danilo.Naves",
             "password": "usuarioview",
             "actions": "view",
             "myvideos": [1,2,3]
         },
         {
             "id": 3,
-            "user": "usuarioconfig",
-            "password": "usuarioconfig",
+            "user": "Pedro.Pagani",
+            "password": "Pedro123",
             "actions": "conf",
             "myvideos": [null]
         }

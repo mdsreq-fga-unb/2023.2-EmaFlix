@@ -1,0 +1,68 @@
+.usuarios-conf {
+    background-color: #040714;
+    height: 1920px;
+}
+.usuarios-conf h1 {
+    color: white;
+    margin-left: 1vw;
+}
+
+.usuarios-conf ul {
+    margin-top: 1vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuarios-conf ul li {
+    border: 1px solid #4CAE4F;
+    border-radius: 8px;
+    display: flex;
+    margin: 1vh 0vw;
+    justify-content: space-around;
+    width: 50%;
+    height: 5vh;
+    align-items: center;
+
+
+}
+.usuarios-conf ul li span h2 {
+    color: white;
+    font-family: inter;
+    font-weight: 200;
+}
+
+.usuarios-conf ul li span h3 {
+    color: white;
+    font-family: inter;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.usuarios-conf ul li span {
+    display: flex;
+    justify-content: center;
+}
+.usuarios-conf ul li select {
+    border: none;
+    font-family: inter;
+    color: white;
+    border-radius: 8px;
+    padding: 1vh 1vw;
+    background-color: #4CAE4F;
+}
+
+.usuarios-conf ul li button {
+    border: none;
+    font-family: inter;
+    display: flex;
+    color: white;
+    border-radius: 8px;
+    padding: 0.6vh 1vw;
+    background-color: #B81414;
+    justify-content: center;
+    align-items: center;
+}
