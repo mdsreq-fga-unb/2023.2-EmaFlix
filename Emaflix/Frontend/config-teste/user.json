@@ -2,13 +2,24 @@
     "user": [
         {
             "id": 1,
-            "user": "usuario1",
-            "password": "senha1"
+            "user": "admin",
+            "password": "admin",
+            "actions": "sudo",
+            "myvideos": [null]
         },
         {
             "id": 2,
-            "user": "usuario2",
-            "password": "senha2"
+            "user": "usuarioview",
+            "password": "usuarioview",
+            "actions": "view",
+            "myvideos": [1,2,3]
+        },
+        {
+            "id": 3,
+            "user": "usuarioconfig",
+            "password": "usuarioconfig",
+            "actions": "conf",
+            "myvideos": [null]
         }
     ]
 }

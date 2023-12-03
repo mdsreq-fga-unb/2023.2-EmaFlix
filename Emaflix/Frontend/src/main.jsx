@@ -9,8 +9,6 @@ import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 import Home from "./routes/pages/Home.jsx"
 import Filter from './routes/pages/Filter.jsx'
 import Profile from './routes/pages/Profile.jsx'
-import Notification from './routes/pages/Notification.jsx'
-
 
 import './index.css'
 import Player from './routes/pages/Player.jsx'
@@ -18,6 +16,9 @@ import Login from './routes/pages/Login.jsx'
 import NewLogin from './routes/pages/NewLogin.jsx'
 import MovieSide from "./routes/pages/MovieSide.jsx"
 import VideoPlayer from './components/pages/VideoPlayer.jsx'
+import UsuarioConf from './routes/pages/UsuarioConf.jsx'
+import VideoConf from './routes/pages/VideoConf.jsx'
+import VideoSave from './routes/pages/VideoSave.jsx'
 
 const router = createBrowserRouter([
   {
@@ -44,8 +45,16 @@ const router = createBrowserRouter([
         element: <Profile/>
       },
       {
-        path: "/notification",
-        element: <Notification/>
+        path: "/usuario_conf",
+        element: <UsuarioConf/>
+      },
+      {
+        path: "/video_conf",
+        element: <VideoConf/>
+      },
+      {
+        path: "/video_save",
+        element: <VideoSave/>
       },
       {
         path: "/player",

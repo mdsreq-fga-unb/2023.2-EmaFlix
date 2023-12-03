@@ -36,7 +36,7 @@
 
 .login input {
     border: none;
-    padding: 2vh 1vw;
+    padding: 1vh 1vw;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 2px solid #4cae4f;
@@ -53,14 +53,14 @@
 .container-input {
     display: flex;
     flex-direction: column;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .Login-entrar {
     border: none;
     border-radius: 8px;
-    padding: 2vh 4vw;
+    padding: 1vh 2vw;
     color: white;
     background-color: #4cae4f;
     font-family: inter;

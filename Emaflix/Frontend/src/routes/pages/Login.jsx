@@ -26,6 +26,7 @@ const Login = () => {
                         <div className='container-input'>
                             <label htmlFor="email">Usuário</label>
                             <input
+                                className='input-button'
                                 type="email"
                                 id="email"
                                 value={email}
