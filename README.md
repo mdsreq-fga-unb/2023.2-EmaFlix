@@ -1,12 +1,12 @@
 # 2023.2-Recanto do Cinema
 
-Recanto do Cinema é uma plataforma de streaming que tem o objetivo de facilitar o acesso aos materias disponibilizados pelo Instituto Federal de Brasília - Campus Recanto das Emas.
+Recanto do Cinema é uma plataforma de streaming que tem o objetivo de centralizar o acesso aos materias disponibilizados pelo Instituto Federal de Brasília - Campus Recanto das Emas numa única plataforma.
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte nossa **[Documentação](https://mdsreq-fga-unb.github.io/2023.2-EmaFlix/))** para saber mais sobre o projeto.
+Consulte nossa **[Documentação]((https://mdsreq-fga-unb.github.io/2023.2-EmaFlix/))** para saber mais sobre o projeto.
 
 ### 📋 Pré-requisitos
 
