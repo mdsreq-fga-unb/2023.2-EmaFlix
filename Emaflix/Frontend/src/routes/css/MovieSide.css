@@ -36,7 +36,7 @@
     color: white;
     font-family: inter;
     padding: 0.3vh 0.5vw;
-    border: 1px solid #4cae4f;
+    border: 1px solid #b495e2;
 }
 
 .container-info p {
@@ -76,7 +76,7 @@
     font-size: 13px;
     max-height: 285px;
     overflow-y: auto;
-    border: 1px solid #4cae4f;
+    border: 1px solid #b495e2 ;
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
@@ -88,7 +88,7 @@
     flex-direction: column;
     width: 90%;
     flex-wrap: wrap;
-    border: 1px solid green;
+    border: 1px solid #b495e2;
     border-radius: 4px;
     padding: 2vh 1vw;
     margin-top: 10px;
@@ -96,7 +96,7 @@
 }
 
 .comentar {
-    background-color: #4cae4f;
+    background-color: #b495e2;
     color: white;
     font-family: inter;
     border: none;

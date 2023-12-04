@@ -22,9 +22,6 @@ const Filter = () => {
           value={searchTerm}
           onChange={handleInputChange}
         />
-        <button className="pesquisa-button">
-          <span className="material-symbols-outlined">search</span>
-        </button>
       </div>
       <h2 className="Title-find">Títulos encontrados</h2>
       <div className="list-cards">

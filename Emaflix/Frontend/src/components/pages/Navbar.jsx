@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Logo from "../../img/ifb_logo_notext.png"
+import Logo from "../../img/logo1.png"
 
 import "../css/Navbar.css"
 
@@ -41,7 +41,7 @@ const Navbar = ({UserLogado}) => {
     return (
         <div className="navbar">
             <div className="container-logo">
-                <Link to={`/`}><label className="Home-logo"><h2>EMAFLIX</h2><img src={Logo}/></label></Link>
+                <Link to={`/`}><label className="Home-logo"><h2>RECANTO DO CINEMA</h2><img src={Logo}/></label></Link>
             </div>
             {UsuarioSelecionado}
         </div>

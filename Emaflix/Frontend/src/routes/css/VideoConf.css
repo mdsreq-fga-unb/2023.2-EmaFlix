@@ -4,7 +4,6 @@
 
 .videos-list {
     background-color: #040714;
-    height: 1920px;
     width: 50%;
 }
 .videos-list h1 {
@@ -14,8 +13,7 @@
 }
 
 .video-conf {
-    background-color: #4cae4f;
-    height: 1920px;
+    background-color: #b495e2;
     width: 50%;
 }
 

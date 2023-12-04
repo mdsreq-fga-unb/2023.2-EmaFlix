@@ -1,6 +1,7 @@
 import '../css/Newlogin.css'
 
-import IfbLogo from "../../img/LOGO_ifb.svg"
+import IfbLogo from "../../img/logo1.png"
+import Ifblogo from "../../img/LOGOIFB.png"
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -20,7 +21,7 @@ const Login = () => {
         <div className='login-all'>
             <div className='container-login-tela'>
                 <div className='login'>
-                    <h1>EMAFLIX</h1>
+                    <h1>RECANTO DO CINEMA</h1>
                     <h2>Preencha os campos abaixos, </h2>
                     <form onSubmit={handleSubmit}>
                         <div className='container-input'>
@@ -53,7 +54,8 @@ const Login = () => {
                 </div>
             </div>
             <div className="container-logo-tela">
-                <img src={IfbLogo} alt="" srcset="" />
+                <img className="recanto-cinema" src={IfbLogo} alt="" srcset=""/>
+                <img className="ifb-logo" src={Ifblogo} alt=""/>
             </div>
         </div>
 

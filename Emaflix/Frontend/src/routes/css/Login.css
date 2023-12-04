@@ -24,8 +24,8 @@
 
 .login h1 {
     color: white;
-    font-size: 45px;
-    letter-spacing: 10px;
+    font-size: 30px;
+    letter-spacing: 3px;
     margin-bottom: 1vw;
 }
 
@@ -39,7 +39,7 @@
     padding: 1vh 1vw;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 2px solid #4cae4f;
+    border: 2px solid #b495e2;
     border-radius: 10px;
     background-color:#040714 ;
     color: white;
@@ -62,7 +62,7 @@
     border-radius: 8px;
     padding: 1vh 2vw;
     color: white;
-    background-color: #4cae4f;
+    background-color: #b495e2;
     font-family: inter;
     font-size: 15px;
     cursor: pointer;
@@ -72,10 +72,19 @@
     width: 50vw;
     flex-direction: column;
     height: 100vh;
-    background-color: #4cae4f;
+    background-color: #b495e2;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.recanto-cinema {
+    max-width: 30vw;
+}
+
+.ifb-logo {
+    max-width: 10vw;
+    margin-top: 5vh;
 }
 
 .login-criar {

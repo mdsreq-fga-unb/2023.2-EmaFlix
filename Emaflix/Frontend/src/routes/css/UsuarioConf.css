@@ -16,14 +16,15 @@
 }
 
 .usuarios-conf ul li {
-    border-bottom: 1px solid #4CAE4F;
+    border-bottom: 1px solid #b495e2;
     border-radius: 8px;
     display: flex;
-    margin: 1vh 0vw;
+    margin: 2vh 0vw;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
     height: 5vh;
     align-items: center;
+    padding-bottom: 10px;
 }
 .usuarios-conf ul li span h2 {
     color: white;
@@ -34,6 +35,7 @@
 
 .h3-simple {
     font-weight: 100 !important;
+    width: 30%;
 }
 
 .usuarios-conf ul li span h3 {
@@ -46,9 +48,10 @@
 
 
 .usuarios-conf ul li span {
-    width: 10vw;
+    width: 15vw;
     display: flex;
     justify-content: center;
+    
 }
 .usuarios-conf ul li select {
     border: none;
@@ -56,7 +59,7 @@
     color: white;
     border-radius: 8px;
     padding: 1vh 1vw;
-    background-color: #4CAE4F;
+    background-color: #b495e2;
 }
 
 .usuarios-conf ul li select option {

@@ -45,7 +45,7 @@ const VideoPlayer = () => {
       // Try to load a manifest.
       // This is an arbitrary URL and should be replaced with your video URL.
       try {
-        await playerInstance.load('http://localhost:3004/api/video', null, 'video/1');
+        await playerInstance.load('https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4', null, 'video/mp4');
         // This runs if the asynchronous load is successful.
         console.log('The video has now been loaded!');
       } catch (e) {

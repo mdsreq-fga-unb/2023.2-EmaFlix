@@ -6,15 +6,15 @@ import { Pagination } from 'swiper/modules';
 
 import '../css/CardPrincipal.css'
 import CardPoster from '../../img/Processo seletivo.png'
-import CardPoster2 from '../../img/festival-online.jpg'
+import CardVideo from '../../img/estudo_v01.gif'
 
 const CardPrincipal = () => {
     return (
         <div className='card-principal'>
-    <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
-        <SwiperSlide><img className='poster-img' src={CardPoster2} alt="" srcset="" /></SwiperSlide>
-        <SwiperSlide><img className='poster-img' src={CardPoster} alt="" srcset="" /></SwiperSlide>
-    </Swiper>
+            <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+            <SwiperSlide><img className='poster-img' src={CardVideo} alt="" srcset="" /></SwiperSlide>
+                <SwiperSlide><img className='poster-img' src={CardPoster} alt="" srcset="" /></SwiperSlide>
+            </Swiper>
         </div>
     )
 }

@@ -34,8 +34,7 @@
 .Home-logo h2 {
     color: white;
     font-family: inter;
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
+    font-size: 1rem;
 }
 
 /* .navbar ul li {
@@ -47,8 +46,8 @@
     font-family: inter;
     font-weight: 600;
     font-size: 15px;
-    color: #4CAE4F;
-    border: 2px solid #4CAE4F ;
+    color: #b495e2;
+    border: 2px solid #b495e2 ;
     padding: 0.75rem 1.5rem;
     border-radius: 10px;
     gap: 0.25rem;
@@ -59,7 +58,8 @@
 }
 
 .btn:hover {
-    background-color: #37833a;
+    background-color: #b495e2;
+    color: white;
     transition: 500ms;
 }
 
