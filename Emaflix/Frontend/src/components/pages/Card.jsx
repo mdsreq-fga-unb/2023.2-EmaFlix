@@ -8,7 +8,7 @@ const Cards = ({ filtros, local }) => {
   const [videos, setVideos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
 
-  const UserLogado = "conf"
+  const UserLogado = ""
 
   useEffect(() => {
     const getMovies = async () => {
@@ -80,7 +80,7 @@ const Cards = ({ filtros, local }) => {
           {filteredVideos.map((video) => (
             <Link to={`/video/${video.ContentId}`} key={video.ContentId}>
               <div className="card" key={video.ContentId}>
-                <img className="card-img" src={CardImagem} alt="" srcSet="" />
+                <img className="card-img" src={video.poster} alt="" srcSet="" />
                 <h2>{video.title}</h2>
                 <div className="card-genero">
                   {video.genro && video.genro.length > 0 && (

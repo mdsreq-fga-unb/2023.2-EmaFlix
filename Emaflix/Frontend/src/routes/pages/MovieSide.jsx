@@ -8,7 +8,7 @@ const MovieSide = () => {
     const { id } = useParams();
     const [moviesPath, setMoviesPath] = useState([]);
     const [videos, setVideos] = useState([]);
-    const userLogado = "conf"
+    const userLogado = "view"
 
     console.log(videos);
     useEffect(() => {
