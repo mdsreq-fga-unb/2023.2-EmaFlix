@@ -33,7 +33,7 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Modo Dark
-      primary: green
+      primary: #3a5087
       accent: red
   plugins:
   - glightbox
