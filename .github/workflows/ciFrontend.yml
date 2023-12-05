@@ -16,7 +16,7 @@ jobs:
      
       - name: run install dependecies frontend and run
         run: |
-          cd Emaflix
+          cd Emaflix/Frontend
           npm install
           npm run dev &
           sleep 10
