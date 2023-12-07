@@ -13,8 +13,9 @@ const Cards = ({ filtros, local }) => {
   useEffect(() => {
     const getMovies = async () => {
       try {
-        const response = await axios.get("http://localhost:3002/videos");
-        setVideos(response.data);
+        const response = await axios.get("http://localhost:3000/videos");
+        setVideos(response.data[0].videos);
+        console.log(videos);
       } catch (error) {
         console.error("Erro ao buscar");
       }
@@ -65,7 +66,7 @@ const Cards = ({ filtros, local }) => {
           return true;
         }
       }
-      if (genro && !video.genro.some(g => g.toLowerCase() === genro.toLowerCase())) {
+      if (genro && !video.genre.some(g => g.toLowerCase() === genro.toLowerCase())) {
         return false;
       }
       return true;
@@ -83,9 +84,9 @@ const Cards = ({ filtros, local }) => {
                 <img className="card-img" src={video.poster} alt="" srcSet="" />
                 <h2>{video.title}</h2>
                 <div className="card-genero">
-                  {video.genro && video.genro.length > 0 && (
+                  {video.genre && video.genre.length > 0 && (
                     <ul>
-                      {video.genro.map((genero, index) => (
+                      {video.genre.map((genero, index) => (
                         <li key={index}>{genero}
                           {UserLogado === 'conf' && (
                             <button className="button-delete" onClick={() => handleDelete(video.ContentId)}><span className="material-symbols-outlined">delete</span></button>
