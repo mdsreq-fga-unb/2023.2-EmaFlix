@@ -1,0 +1,108 @@
+.button-neon {
+  border-radius: 4px;
+  font-family: inter !important;
+  font-weight: 500;
+  position: relative;
+  background: #b495e2;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+  padding: 0.7rem 0.7rem;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 17px;
+  margin-right: 0.5rem;
+}
+
+.button-neon:hover {
+  letter-spacing: 0.155rem;
+  padding: 0.7rem 0.7rem;
+  background: var(--clr);
+  color: var(--clr);
+  /* box-shadow: 0 0 35px var(--clr); */
+  animation: box 3s infinite;
+}
+
+.button-neon::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #040714;
+}
+
+.button-neon span {
+  position: relative;
+  z-index: 1;;
+  
+}
+.button-neon i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.button-neon i::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 80%;
+  top: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.button-neon:hover i::before {
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
+}
+
+.button-neon i::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  left: 20%;
+  bottom: -2px;
+  border: 2px solid var(--clr);
+  background: #272822;
+  transition: 0.2s;
+}
+
+.button-neon:hover i::after {
+  width: 15px;
+  left: 80%;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes box {
+  0% {
+    box-shadow: #27272c;
+  }
+  50% {
+    box-shadow: 0 0 25px var(--clr);
+  }
+  100% {
+    box-shadow: #27272c;
+  }
+}

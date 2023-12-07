@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 
 import Logo from "../../img/logo1.png"
 
+import "../class_css/button_neon.css"
+
 import "../css/Navbar.css"
 
 
@@ -10,30 +12,31 @@ const Navbar = ({UserLogado}) => {
 
     let UsuarioSelecionado = null;
 
-    UserLogado = "view"
+    UserLogado = "sudo"
 
     if (UserLogado === 'view') {
         UsuarioSelecionado = (
         <ul>
-            <li><Link to={`/filter`} className="btn"><span className="material-symbols-outlined">search</span><p>Busca</p></Link></li>
-            <li><Link to={`/video_save`} className="btn"><span className="material-symbols-outlined">notifications_active</span><p>Videos Salvos</p></Link></li>
-            <li><Link to={`/profile`} className="btn"><span className="material-symbols-outlined">person</span><p>Perfil</p></Link></li>
+            
+            <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
+            <li><Link to={`/video_save`}><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">notifications_active</span>Videos Salvos</span><i></i></button></Link></li>
+            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
         </ul>
         );
       } else if (UserLogado === 'conf') {
         UsuarioSelecionado = (
             <ul>
-            <li><Link to={`/filter`} className="btn"><span className="material-symbols-outlined">search</span><p>Busca</p></Link></li>
-            <li><Link to={`/video_conf`} className="btn"><span className="material-symbols-outlined">movie</span><p>Painel de Vídeos</p></Link></li>
-            <li><Link to={`/profile`} className="btn"><span className="material-symbols-outlined">person</span><p>Perfil</p></Link></li>
+            <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
+            <li><Link to={`/video_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">movie</span>Painel de vídeos</span><i></i></button></Link></li>
+            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
         </ul>
         );
       } else if (UserLogado === 'sudo') {
         UsuarioSelecionado = (
             <ul>
-            <li><Link to={`/filter`} className="btn"><span className="material-symbols-outlined">search</span><p>Busca</p></Link></li>
-            <li><Link to={`/usuario_conf`} className="btn"><span className="material-symbols-outlined">settings</span><p>Painel de Usuários</p></Link></li>
-            <li><Link to={`/profile`} className="btn"><span className="material-symbols-outlined">person</span><p>Perfil</p></Link></li>
+            <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
+            <li><Link to={`/usuario_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">settings</span>Painel de Usuários</span><i></i></button></Link></li>
+            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
         </ul>
         );
       }
