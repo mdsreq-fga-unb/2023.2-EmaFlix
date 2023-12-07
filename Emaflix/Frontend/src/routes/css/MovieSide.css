@@ -73,10 +73,10 @@
 .comments ul {
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 40vw;
     color: white;
     font-family: inter;
-    font-size: 13px;
+    font-size: 17px;
     max-height: 285px;
     overflow-y: auto;
     border: 1px solid #b495e2 ;
@@ -107,6 +107,27 @@
     padding: 2vh 1vw;
     margin-top: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .comments ul {
+        max-height: 200px;
+        width: 30vw;
+        font-size: 15px;
+    }
+    .comentar {
+        padding: 1vh 1vw;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .comments ul {
+        width: 30vw;
+        font-size: 12px;
+    }
+    .comentar {
+        padding: 1vh 1vw;
+    }
 }
 
 @media screen and (max-width: 840px) {
