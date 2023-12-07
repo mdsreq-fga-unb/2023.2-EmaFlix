@@ -4,9 +4,9 @@ Recanto do Cinema é uma plataforma de streaming que tem o objetivo de centraliz
 
 ## 🚀 Começando
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
-
 Consulte nossa **([Documentação](https://mdsreq-fga-unb.github.io/2023.2-EmaFlix/))** para saber mais sobre o projeto.
+
+O site está hospedado em **([Site](https://2023-2-emaflix.vercel.app))**
 
 ### 📋 Pré-requisitos
 
@@ -54,14 +54,13 @@ Dar exemplos
 * [React](https://react.dev) - O framework web usado
 * [Node.js](https://nodejs.org/en) - Base de framework
 * [MongoDB](https://www.mongodb.com/pt-br) - Banco de Dados
+* [Java](https://www.java.com/pt-BR/) - API
 
 ## 📌 Versão
 
 Versão de desenvolvimento v0.3
 
 ## ✒️ Autores
-
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 * **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
 * **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
