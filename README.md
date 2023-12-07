@@ -31,22 +31,8 @@ Back-end
 
 ## ⚙️ Executando os testes
 
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
 ```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
+npm test
 ```
 
 ## 🛠️ Construído com
