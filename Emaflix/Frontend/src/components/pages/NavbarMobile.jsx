@@ -1,20 +1,54 @@
+import "../css/NavBarMobile.css"
+
 import { Link } from "react-router-dom";
 
-import Logo from "../../img/ifb_logo_notext.png"
+import Logo from "../../img/logo1.png"
 
-import "../css/NavbarMobile.css"
+import "../class_css/button_neon.css"
 
-const Navbar = () => {
+import "../css/Navbar.css"
+
+
+const Navbar = ({UserLogado}) => {
+
+
+    let UsuarioSelecionado = null;
+
+    UserLogado = "view"
+
+    if (UserLogado === 'view') {
+        UsuarioSelecionado = (
+        <ul className="r-button">
+            
+            <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span></span><i></i></button></Link></li>
+            <li><Link to={`/video_save`}><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">notifications_active</span></span><i></i></button></Link></li>
+            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span></span><i></i></button></Link></li>
+        </ul>
+        );
+      } else if (UserLogado === 'conf') {
+        UsuarioSelecionado = (
+            <ul className="r-button">
+            <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
+            <li><Link to={`/video_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">movie</span>Painel de vídeos</span><i></i></button></Link></li>
+            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
+        </ul>
+        );
+      } else if (UserLogado === 'sudo') {
+        UsuarioSelecionado = (
+            <ul className="r-button">
+            <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
+            <li><Link to={`/usuario_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">settings</span>Painel de Usuários</span><i></i></button></Link></li>
+            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
+        </ul>
+        );
+      }
+
     return (
         <div className="navbar">
             <div className="container-logo">
-                <Link to={`/`}><label className="Home-logo"><h2>EMAFLIX</h2><img src={Logo}/></label></Link>
+                <Link to={`/`}><label className="Home-logo"><h2>RECANTO DO CINEMA</h2><img src={Logo}/></label></Link>
             </div>
-            <ul>
-                <li><Link to={`/filter`} className="btn"><p>Busca</p><span className="material-symbols-outlined">search</span></Link></li>
-                <li><Link to={`/profile`} className="btn"><p>Avisos</p><span className="material-symbols-outlined">notifications_active</span></Link></li>
-                <li><Link to={`/notification`} className="btn"><p>Perfil</p><span className="material-symbols-outlined">person</span></Link></li>
-            </ul>
+            {UsuarioSelecionado}
         </div>
     );
 };
