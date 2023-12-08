@@ -14,8 +14,8 @@ const MovieSide = () => {
     useEffect(() => {
         const getMovies = async () => {
             try {
-                const response = await axios.get("http://localhost:3002/videos");
-                const moviesInfo = response.data;
+                const response = await axios.get("http://localhost:3000/videos");
+                const moviesInfo = response.data[0].videos;
                 const movieInfoFound = moviesInfo.find(movie => movie.ContentId == id)
                 setVideos(movieInfoFound);
             } catch (error) {
@@ -30,8 +30,9 @@ const MovieSide = () => {
     useEffect(() => {
         const getPathMovies = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/moviespath");
-                const movies = response.data;
+                const response = await axios.get("http://localhost:3000/videospath");
+                const movies = response.data.video.moviespath;
+                console.log(movies);
                 const moviesFound = movies.find(movie => movie.ContentId == id)
                 setMoviesPath(moviesFound);
 
@@ -46,7 +47,7 @@ const MovieSide = () => {
         return <p>Vídeo não encotrado irmão, cara trabalha num server de mine</p>;
     }
 
-    console.log(moviesPath.comments)
+    console.log(moviesPath)
 
     return (
         <div className="movie-side">
