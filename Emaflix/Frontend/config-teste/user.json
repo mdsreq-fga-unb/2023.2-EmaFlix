@@ -1,21 +1,18 @@
 {
     "user": [
         {
-            "id": 1,
             "user": "admin",
             "password": "admin",
             "actions": "sudo",
             "myvideos": [null]
         },
         {
-            "id": 2,
             "user": "Danilo.Naves",
             "password": "usuarioview",
             "actions": "view",
             "myvideos": [1, 2]
         },
         {
-            "id": 3,
             "user": "Pedro.Pagani",
             "password": "Pedro123",
             "actions": "conf",

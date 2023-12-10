@@ -2,20 +2,38 @@ import '../css/Login.css'
 
 import IfbLogo from "../../img/logo1.png"
 import Ifblogo from "../../img/LOGOIFB.png"
-
+import axios from 'axios';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 const Login = () => {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [tokenValido, setTokenValido] = useState('');
 
-    const handleSubmit = (event) => {
+
+    const Login = async (event) => {
         event.preventDefault();
-        // Mandar credencias para Pedro lindo
-        console.log('Email:', email);
-        console.log('Password:', password);
+        try {
+            const response = await axios.post('http://localhost:3000/login', {
+                username: username,
+                password: password
+            });
+
+            const token = response.data.token;
+            localStorage.setItem('token', token);
+            if (token != null) {
+                setTokenValido(true);
+            }
+
+        } catch (error) {
+            console.log('Erro ao fazer login:', error.response.statusText);
+        }
     };
+
+    if (tokenValido) {
+        return <Navigate to="/" />;
+    }
 
     return (
         <div className='login-all'>
@@ -23,16 +41,16 @@ const Login = () => {
                 <div className='login'>
                     <h1>RECANTO DO CINEMA</h1>
                     <h2>Seja bem-vindo, </h2>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={Login}>
                         <div className='container-input'>
-                            <label htmlFor="email">Usuário</label>
+                            <label htmlFor="username">Usuário</label>
                             <input
                                 className='input-button'
-                                type="email"
-                                id="email"
-                                value={email}
+                                type="text"
+                                id="username"
+                                value={username}
                                 placeholder='Digite seu usuário'
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e) => setUsername(e.target.value)}
                             />
                         </div>
                         <div className='container-input'>
@@ -50,13 +68,13 @@ const Login = () => {
                         <div>
                             <p className='login-criar'><Link to={'/new_login'}>Novo por aqui? Crie uma conta</Link></p>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>
             <div className="container-logo-tela">
-                <img className="recanto-cinema" src={IfbLogo} alt="" srcset=""/>
-                <img className="ifb-logo" src={Ifblogo} alt=""/>
+                <img className="recanto-cinema" src={IfbLogo} alt="" srcset="" />
+                <img className="ifb-logo" src={Ifblogo} alt="" />
             </div>
         </div>
 
