@@ -1,6 +1,11 @@
 .login-all {
     display: flex;
 }
+.error p {
+    font-family: inter;
+    color: red;
+    margin-top: 1vh; ;
+}
 
 .container-login-tela {
     width: 50vw;

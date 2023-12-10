@@ -10,6 +10,7 @@ const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [tokenValido, setTokenValido] = useState('');
+    const [errorMessagem, setErrorMessagem] = useState('');
 
 
     const Login = async (event) => {
@@ -27,7 +28,8 @@ const Login = () => {
             }
 
         } catch (error) {
-            console.log('Erro ao fazer login:', error.response.statusText);
+            setErrorMessagem("Usuário ou senha incorreta");
+            console.log(errorMessagem);
         }
     };
 
@@ -35,13 +37,19 @@ const Login = () => {
         return <Navigate to="/" />;
     }
 
+
     return (
         <div className='login-all'>
             <div className='container-login-tela'>
+
                 <div className='login'>
+                    
                     <h1>RECANTO DO CINEMA</h1>
                     <h2>Seja bem-vindo, </h2>
-                    <form onSubmit={Login}>
+                    <div className='error'>
+                        <p>{errorMessagem}</p>
+                    </div>
+                    <form onSubmit={Login} autoComplete='off'>
                         <div className='container-input'>
                             <label htmlFor="username">Usuário</label>
                             <input
