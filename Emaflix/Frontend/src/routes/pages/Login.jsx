@@ -20,8 +20,10 @@ const Login = () => {
                 username: username,
                 password: password
             });
-
+            console.log(response.data.user.actions);
             const token = response.data.token;
+            localStorage.setItem('actions', response.data.user.actions);
+            localStorage.setItem('myvideos', response.data.user.myvideos);
             localStorage.setItem('token', token);
             if (token != null) {
                 setTokenValido(true);

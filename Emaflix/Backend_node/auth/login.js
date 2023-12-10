@@ -17,7 +17,7 @@ async function login(req, res) {
         }
 
         const token = jwt.sign({ id: user.id, myvideos: [user.myvideos] }, 'segredo', { expiresIn: '3h' });
-        res.json({ token });
+        res.json({ token, user: { username: user.username, actions: user.actions, myvideos: user.myvideos } });
     } catch (error) {
         res.status
     }

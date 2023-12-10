@@ -13,7 +13,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [LoginSucesso, setLoginSucesso] = useState('');
     const [errorMessagem, setErrorMessagem] = useState('');
-    const errorLogin = false;
+    var errorLogin = false;
     const [redirect, setRedirect] = useState(false);
 
     const handleSubmit = async (event) => {

@@ -7,14 +7,17 @@ import "../class_css/button_neon.css"
 import "../css/Navbar.css"
 
 
-const Navbar = ({UserLogado}) => {
 
+
+const Navbar = ({}) => {
 
     let UsuarioSelecionado = null;
 
-    UserLogado = "view"
+    const UserLogado = localStorage.getItem('actions');
 
-    if (UserLogado === 'view') {
+    console.log("o user logado é"+UserLogado);
+
+    if (UserLogado === 'user') {
         UsuarioSelecionado = (
         <ul>
             
