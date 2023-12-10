@@ -3,19 +3,50 @@ import '../css/Newlogin.css'
 import IfbLogo from "../../img/logo1.png"
 import Ifblogo from "../../img/LOGOIFB.png"
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { Navigate } from 'react-router-dom';
 
 const Login = () => {
-    const [email, setEmail] = useState('');
+    const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [LoginSucesso, setLoginSucesso] = useState('');
+    const [errorMessagem, setErrorMessagem] = useState('');
+    const errorLogin = false;
+    const [redirect, setRedirect] = useState(false);
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        // Mandar credencias para Pedro lindo
-        console.log('Email:', email);
-        console.log('Password:', password);
+        if(password.length < 8){
+            setErrorMessagem("Senha muito curta, a senha deve ter no mínimo 8 caracteres");
+            return;
+        }
+        try {
+            const response = await axios.post('http://localhost:3000/register', {
+                username: username,
+                password: password
+            });
+            setLoginSucesso('Parabens, Usuário criado com sucesso! Redirecionando para a tela de login');
+            setErrorMessagem('');
+            console.log(response.data.error);
+        } catch (error) {
+            setErrorMessagem("Usuário já existe");
+            errorLogin = true;
+        }
     };
+
+    useEffect(() => {
+        if (LoginSucesso === 'Parabens, Usuário criado com sucesso! Redirecionando para a tela de login') {
+            setTimeout(() => {
+                setRedirect(true);
+            }, 3000);
+        }
+    }, [LoginSucesso]);
+
+    if (redirect) {
+        return <Navigate to="/login" />;
+    }
 
     return (
         <div className='login-all'>
@@ -23,15 +54,19 @@ const Login = () => {
                 <div className='login'>
                     <h1>RECANTO DO CINEMA</h1>
                     <h2>Preencha os campos abaixos, </h2>
+                    <div className='error'>
+                        <p>{errorMessagem}</p>
+                        <p className='login-sucesso'>{LoginSucesso}</p>
+                    </div>
                     <form onSubmit={handleSubmit}>
                         <div className='container-input'>
-                            <h8 htmlFor="email">Digite seu novo Usuário</h8>
+                            <h8 htmlFor="username">Digite seu novo Usuário</h8>
                             <input
-                                type="email"
-                                id="email"
-                                value={email}
+                                type="text"
+                                id="username"
+                                value={username}
                                 placeholder='Usuário'
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e) => setUsername(e.target.value)}
                             />
                         </div>
                         <div className='container-input'>
@@ -44,7 +79,7 @@ const Login = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
-                        <button className='Login-entrar' type="submit">Entrar</button>
+                        <button className='Login-entrar' type="submit">Criar Conta</button>
 
                         <div>
                             <p className='login-criar'><Link to={'/login'}>Já possui uma conta? Entre aqui</Link></p>

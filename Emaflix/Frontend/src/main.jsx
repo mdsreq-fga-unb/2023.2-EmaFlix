@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
+
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 
 //Páginas
@@ -11,7 +12,6 @@ import Filter from './routes/pages/Filter.jsx'
 import Profile from './routes/pages/Profile.jsx'
 
 import './index.css'
-import Player from './routes/pages/Player.jsx'
 import Login from './routes/pages/Login.jsx'
 import NewLogin from './routes/pages/NewLogin.jsx'
 import MovieSide from "./routes/pages/MovieSide.jsx"

@@ -8,7 +8,7 @@ const Cards = ({ filtros, local }) => {
   const [videos, setVideos] = useState([]);
   const [filteredVideos, setFilteredVideos] = useState([]);
 
-  const UserLogado = ""
+  const UserLogado = "view"
 
   useEffect(() => {
     const getMovies = async () => {

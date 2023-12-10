@@ -7,6 +7,10 @@
     margin-top: 1vh; ;
 }
 
+.error .login-sucesso {
+    color: rgb(5, 189, 5);
+}
+
 .container-login-tela {
     width: 50vw;
     height: 100vh;
