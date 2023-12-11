@@ -2,15 +2,12 @@ import "../css/Home.css"
 
 import CardPrincipal from "../../components/pages/CardPrincipal.jsx";
 
-import Carrossel from "../../components/pages/Carrossel.jsx";
-
-import Cards from "../../components/pages/Card";
+import Cards from "../../components/pages/Card.jsx";
 
 
 const Home = () => {
     return (
         <div className="home">
-            {/* <Carrossel/> */}
             <CardPrincipal></CardPrincipal>
             <div className="home-cards">
                 <h2 className="titulos-generos-home">Títulos disponíveis</h2>

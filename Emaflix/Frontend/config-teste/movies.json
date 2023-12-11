@@ -1,7 +1,7 @@
 {
     "videos": [
         {
-            "ContentId": "1",
+            "ContentId": 1,
             "title": "Spider-man Aranhaverso",
             "age": "12",
             "tags":["ação", "alunos"],
@@ -9,7 +9,7 @@
             "genre": ["Aventura"]
         },
         {
-            "ContentId": "2",
+            "ContentId": 2,
             "title": "Homem-Aranha",
             "age": "12",
             "tags":["ação", "alunos"],

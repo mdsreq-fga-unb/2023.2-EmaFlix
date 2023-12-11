@@ -10,6 +10,20 @@
     margin-left: 2vw;
 }
 
+.aviso-comment {
+    color: rgb(0, 199, 17);
+    font-family: inter;
+    margin-top: 1vh;
+    
+
+}
+
+
+.comentarios-input input {
+    
+    margin-right: 1vw;
+}
+
 .container-info-gerais h2 {
     margin-right: 1vw;
 }

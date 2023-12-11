@@ -8,7 +8,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const getVideos = require('./controller/videosController.js');
-const getVideosCaminho = require('./controller/videoCaminhoController.js');
+const {getMovieDetail, AdicionarComentario, getVideoCaminho} = require('./controller/videoCaminhoController.js');
 
 const {login, register} = require('./auth/login.js');
 
@@ -27,11 +27,12 @@ mongoose.connect(mongoUrl, {
 });
 
 //Chama os vídeos
-app.get('/videos', getVideos);
-app.get('/videospath', getVideosCaminho);
+app.get('/videos', getVideoCaminho);
+app.get('/videospath', getMovieDetail);
 //Chama o login
 app.post('/login', login);
 app.post('/register', register);
+app.put('/addcomentario', AdicionarComentario);
 
 //////////////////////////////
 
