@@ -1,3 +1,4 @@
+const UserModel = require('../auth/UserModel');
 const VideoCaminho = require('../model/videoCaminhoModel');
 const Video = require('../model/videoModel');
 
@@ -69,10 +70,55 @@ const RemoverComentario = async (req, res) => {
   }
 };
 
+const SalvarMyvideo = async (req, res) => {
+  try {
+    const { username, myvideoId } = req.body;
+    console.log(req.body);
+
+    const update = await UserModel.updateOne(
+      { "username": username },
+      { $push: { "myvideos": myvideoId } },
+      { new: true }
+    );
+
+    if (update.modifiedCount === 0) {
+      return res.status(404).json({ message: 'Não foi possível adicionar o vídeo nos favoritos' });
+    }
+
+    res.json({ message: 'Vídeo adicionado ao favoritos com sucesso' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+const RemoverMyvideo = async (req, res) => {
+  try {
+    const { username, myvideoId } = req.body;
+    console.log(req.body);
+
+    const update = await UserModel.updateOne(
+      { "username": username },
+      { $pull: { "myvideos": myvideoId } },
+      { new: true }
+    );
+
+    console.log(update);
+    if (update.modifiedCount === 0) {
+      return res.status(404).json({ message: 'Não foi possível remover o vídeo dos favoritos ' });
+    }
+
+    res.json({ message: 'Vídeo removido dos favoritos' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 module.exports = {
   getVideoCaminho,
   getMovieDetail,
   AdicionarComentario,
-  RemoverComentario
+  RemoverComentario,
+  SalvarMyvideo,
+  RemoverMyvideo
 }
 

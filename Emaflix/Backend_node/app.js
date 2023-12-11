@@ -8,9 +8,10 @@ const cors = require('cors');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const getVideos = require('./controller/videosController.js');
-const {getMovieDetail, AdicionarComentario, getVideoCaminho, RemoverComentario} = require('./controller/videoCaminhoController.js');
+const {getMovieDetail, AdicionarComentario, getVideoCaminho, RemoverComentario, SalvarMyvideo, RemoverMyvideo} = require('./controller/videoCaminhoController.js');
 
 const {login, register} = require('./auth/login.js');
+const {getUser, chargePermission} = require('./controller/configurarUser.js');
 
 const PORT = process.env.PORT || 3000;
 const mongoUrl = process.env.MONGO_URL;
@@ -34,6 +35,10 @@ app.post('/login', login);
 app.post('/register', register);
 app.put('/addcomentario', AdicionarComentario);
 app.put('/removecomentario', RemoverComentario);
+app.get('/userconfig', getUser);
+app.put('/chargepermissao', chargePermission);
+app.put('/savemyvideo', SalvarMyvideo);
+app.put('/removemyvideo', RemoverMyvideo);
 
 //////////////////////////////
 

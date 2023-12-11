@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-import { Link } from "react-router-dom";
-
 import "../css/UsuarioConf.css"
 import axios from "axios";
 
@@ -11,8 +9,8 @@ const UsuarioConf = () => {
     useEffect(() => {
         const getUserConf = async () => {
             try {
-                const response = await axios.get("http://localhost:3004/user");
-                const UserConfig = response.data.filter(user => user.actions.includes('conf') || user.actions.includes('view'));
+                const response = await axios.get("http://localhost:3000/userconfig");
+                const UserConfig = response.data;
                 setUser(UserConfig);
                 console.log(response.data);
             } catch (error) {

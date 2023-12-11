@@ -27,8 +27,13 @@ const renderVideoCard = (video, UserLogado, handleDelete) => (
   </Link>
 );
 
-const Cards = () => {
+const Cards = ({ filtros: ValueFilter }) => {
+  console.log(ValueFilter);
+  if(ValueFilter === undefined){
+    ValueFilter = [];
+  }
   const [videos, setVideos] = useState([]);
+  const [filteredVideos, setFilteredVideos] = useState([]);
   const UserLogado = localStorage.getItem("actions");
 
   useEffect(() => {
@@ -43,15 +48,37 @@ const Cards = () => {
     getMovies();
   }, []);
 
-  console.log("Este são os objetos do vídeo:");
-  console.log(videos);
+  useEffect(() => {
+    const filterArray = Array.isArray(ValueFilter) ? ValueFilter : [ValueFilter];
+
+    if (filterArray.length === 0) {
+      setFilteredVideos(videos);
+    } else {
+      const filtered = videos.filter(video =>
+        filterArray.some(filter =>
+          video.title.toLowerCase().includes(filter.toLowerCase()) ||
+          (video.genre && video.genre.some(genre =>
+            genre.toLowerCase().includes(filter.toLowerCase())
+          )) ||
+          (video.tags && video.tags.some(tag =>
+            tag.toLowerCase().includes(filter.toLowerCase())
+          )) ||
+          (video.age && video.age.toLowerCase().includes(filter.toLowerCase()))
+        )
+      );
+      setFilteredVideos(filtered);
+    }
+  }, [ValueFilter, videos]);
+
+  console.log("Estes são os objetos de vídeo:");
+  console.log(filteredVideos);
+
   const handleDelete = (contentId) => {
-    
   };
 
   return (
     <>
-      {videos.length > 0 && videos.map((video) => renderVideoCard(video, UserLogado, handleDelete))}
+      {filteredVideos.length > 0 && filteredVideos.map((video) => renderVideoCard(video, UserLogado, handleDelete))}
     </>
   );
 };

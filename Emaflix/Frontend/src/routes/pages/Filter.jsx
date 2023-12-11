@@ -3,13 +3,11 @@ import Cards from "../../components/pages/Card.jsx";
 import "../css/Filter.css";
 
 const Filter = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-
+  const [ValueFilter, setValueFilter] = useState('');
+  console.log("o valor do filtro é" + ValueFilter);
   const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
+    setValueFilter(event.target.value);
   };
-  console.log("Item de pesquisa");
-  console.log(searchTerm);
 
   return (
     <div className="filter">
@@ -19,13 +17,13 @@ const Filter = () => {
           name=""
           id=""
           placeholder="Pesquisar por gêneros, nomes, classificação..."
-          value={searchTerm}
+          value={ValueFilter}
           onChange={handleInputChange}
         />
       </div>
       <h2 className="Title-find">Títulos encontrados</h2>
       <div className="list-cards">
-        <Cards filtros={searchTerm}/>
+        <Cards filtros={[ValueFilter]}/>
       </div>
     </div>
   );
