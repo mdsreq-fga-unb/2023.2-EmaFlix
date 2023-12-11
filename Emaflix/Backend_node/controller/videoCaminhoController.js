@@ -40,7 +40,6 @@ const AdicionarComentario = async (req, res) => {
       { "ContentId": id },
       { $push: { "comments": comment } }
     );
-    console.log(update);
     if (!update) {
       return res.status(404).json({ message: 'Não foi possível adicionar o comentário' });
     }
@@ -51,9 +50,29 @@ const AdicionarComentario = async (req, res) => {
   }
 };
 
+const RemoverComentario = async (req, res) => {
+  try {
+    const { id, comment  } = req.body;
+    console.log(req.body);
+
+    const update = await VideoCaminho.updateOne(
+      { "ContentId": id },
+      { $pull: { "comments": { $eq: comment } } }
+    );
+    if (update.modifiedCount === 0) {
+      return res.status(404).json({ message: 'Não foi possível deletar o comentário' });
+    }
+
+    res.json({ message: 'Comentário deletado com sucesso!'});
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 module.exports = {
   getVideoCaminho,
   getMovieDetail,
-  AdicionarComentario
+  AdicionarComentario,
+  RemoverComentario
 }
 

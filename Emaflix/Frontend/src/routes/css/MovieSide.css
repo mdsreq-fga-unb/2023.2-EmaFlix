@@ -14,13 +14,11 @@
     color: rgb(0, 199, 17);
     font-family: inter;
     margin-top: 1vh;
-    
-
 }
 
 
 .comentarios-input input {
-    
+
     margin-right: 1vw;
 }
 
@@ -74,10 +72,17 @@
     color: white;
 }
 
+.aviso-comment-delete {
+    color: red;
+    font-family: inter;
+    margin-top: 1vh;
+}
+
 .buttonDelete {
+    cursor: pointer;
     width: 2vw;
     height: 4vh;
-    background-color:#b81414 ;
+    background-color: #b81414;
     color: white;
     border: none;
     margin-top: 1vh;
@@ -93,7 +98,7 @@
     font-size: 17px;
     max-height: 285px;
     overflow-y: auto;
-    border: 1px solid #b495e2 ;
+    border: 1px solid #b495e2;
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
@@ -129,6 +134,7 @@
         width: 30vw;
         font-size: 15px;
     }
+
     .comentar {
         padding: 1vh 1vw;
     }
@@ -139,6 +145,7 @@
         width: 30vw;
         font-size: 12px;
     }
+
     .comentar {
         padding: 1vh 1vw;
     }
@@ -151,17 +158,21 @@
         flex-direction: column;
         align-items: center;
     }
+
     .comments ul {
         width: 100%;
     }
+
     .comments {
         width: 70%;
     }
+
     .container-info h3 {
         margin-right: 5px;
         padding: 0;
         max-height: 30px;
     }
+
     .container-info h2 {
         font-size: 20px;
     }

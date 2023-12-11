@@ -12,6 +12,7 @@ const MovieSide = () => {
     const userLogado = localStorage.getItem('actions');
     const [comments, setComments] = useState([]);
     const [commentConfirme, setCommentConfirme] = useState([]);
+    const [commentDelete, setCommentDelete] = useState([]);
     console.log("Este é o user logado" + userLogado);
 
     useEffect(() => {
@@ -27,8 +28,6 @@ const MovieSide = () => {
         };
         getMovies();
     }, [id]);
-
-
 
     useEffect(() => {
         const getPathMovies = async () => {
@@ -72,6 +71,21 @@ const MovieSide = () => {
         return <p>Vídeo não encotrado irmão, cara trabalha num server de mine</p>;
     }
 
+    const DeletarComments = async (index) => {
+        try {
+            const response = await axios.put(`http://localhost:3000/removecomentario`, {
+                id: id,
+                comment: index
+            });
+            const apirespostaDelete = response.data.message;
+            if (apirespostaDelete == 'Comentário deletado com sucesso!') {
+                setCommentDelete("Comentário deletado com sucesso, e logo estará disponível para visualização");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     return (
         <div className="movie-side">
             <div className="video-container">
@@ -81,7 +95,7 @@ const MovieSide = () => {
                     <ul className="barraderolagem">
                         {moviesPath && moviesPath.comments && moviesPath.comments.map((comment, index) => (
                             <li key={index}>{comment}{userLogado === 'conf' && (
-                                <button className="buttonDelete" onClick={() => DeletarComments(video.ContentId)}><span className="material-symbols-outlined">delete</span></button>
+                                <button className="buttonDelete" onClick={() => DeletarComments(moviesPath.comments[index])}><span className="material-symbols-outlined">delete</span></button>
                             )}</li>
                         ))}
                     </ul>
@@ -89,6 +103,7 @@ const MovieSide = () => {
                         <input type='text' value={comments} onChange={AlterarComments} className="comentar" placeholder="Comente aqui" />
                         <button onClick={comentar} className="comentar">Comentar</button>
                         <div>
+                            <p className='aviso-comment-delete'>{commentDelete}</p>
                             <p className='aviso-comment'>{commentConfirme}</p>
                         </div>
 
