@@ -27,7 +27,7 @@ const Navbar = ({ }) => {
 
                 <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
                 <li><Link to={`/video_save`}><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">notifications_active</span>Videos Salvos</span><i></i></button></Link></li>
-                <li><button onClick={handleLogout} className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">logout</span>Logout</span><i></i></button></li>
+                <Link to={`/login`}><li><button onClick={handleLogout} className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">logout</span>Logout</span><i></i></button></li></Link>
             </ul>
         );
     } else if (UserLogado === 'conf') {
