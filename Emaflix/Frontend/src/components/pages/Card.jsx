@@ -27,7 +27,7 @@ const renderVideoCard = (video, UserLogado, handleDelete) => (
   </Link>
 );
 
-const Cards = ({ filtros: ValueFilter }) => {
+const Cards = ({ filtros: ValueFilter, local }) => {
   console.log(ValueFilter);
   if(ValueFilter === undefined){
     ValueFilter = [];
@@ -63,7 +63,8 @@ const Cards = ({ filtros: ValueFilter }) => {
           (video.tags && video.tags.some(tag =>
             tag.toLowerCase().includes(filter.toLowerCase())
           )) ||
-          (video.age && video.age.toLowerCase().includes(filter.toLowerCase()))
+          (video.age && video.age.toLowerCase().includes(filter.toLowerCase())) ||
+          (String(video.ContentId).toLowerCase().includes(String(filter).toLowerCase()) && local === 1)
         )
       );
       setFilteredVideos(filtered);
