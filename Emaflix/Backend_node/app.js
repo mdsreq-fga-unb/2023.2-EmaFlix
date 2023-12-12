@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const getVideos = require('./controller/videosController.js');
 const {getMovieDetail, AdicionarComentario, getVideoCaminho, RemoverComentario, SalvarMyvideo, RemoverMyvideo} = require('./controller/videoCaminhoController.js');
-
+const {uploadVideos, upload} = require('./controller/uploadVideos.js');
 const {login, register} = require('./auth/login.js');
 const {getUser, chargePermission} = require('./controller/configurarUser.js');
 
@@ -39,6 +39,7 @@ app.get('/userconfig', getUser);
 app.put('/chargepermissao', chargePermission);
 app.put('/savemyvideo', SalvarMyvideo);
 app.put('/removemyvideo', RemoverMyvideo);
+app.post('/upload', upload.single('video'), uploadVideos)
 
 //////////////////////////////
 
