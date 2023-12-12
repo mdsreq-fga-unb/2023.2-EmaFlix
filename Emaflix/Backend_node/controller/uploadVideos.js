@@ -5,7 +5,7 @@ const VideoCaminho = require('../model/videoCaminhoModel.js');
 
 const storage = new Storage({
     projectId: 'sunny-advantage-407923',
-    keyFilename: '../../sunny-advantage-407923-b2a7d02baa2b.json'
+    keyFilename: './controller/sunny-advantage-407923-b2a7d02baa2b.json'
 });
 const bucket = storage.bucket('armazem-recanto');
 
@@ -32,7 +32,7 @@ const uploadVideos = async (req, res) => {
         blobStream.on('finish', async () => {
             const publicUrl = `https://storage.googleapis.com/${bucket.name}/${blob.name}`;
 
-            const newVideo = new Video({ path: publicUrl });
+            const newVideo = new VideoCaminho({ path: publicUrl });
             await newVideo.save();
 
             return res.status(201).send({ path: publicUrl });

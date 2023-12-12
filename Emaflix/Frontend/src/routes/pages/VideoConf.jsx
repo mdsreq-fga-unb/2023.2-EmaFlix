@@ -1,21 +1,52 @@
 import "../css/VideoConf.css"
 
+import axios from "axios";
+
 import React, { useState } from 'react';
 
 import Filter from "./Filter"
 
-
 const VideoConf = () => {
 
-    const [file, setFile] = useState(null);
+    const [video, setVideo] = useState(null);
     const [poster, setPoster] = useState(null);
     const [tags, setTags] = useState('');
     const [idade, setIdade] = useState('');
     const [genero, setGenero] = useState('');
+    const [titulo, setTitulo] = useState('');
+    const [sinopse, setSinopse] = useState('');
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
+    };
+
+    const handleVideoChange = (e) => {
+        setVideo(e.target.files[0]);
+    };
+
+    const handleUpload = async () => {
+        if (video) {
+            const formData = new FormData();
+            formData.append('video', video);
+            // formData.append('title', titulo);
+            // formData.append('age', idade);
+            // formData.append('tags', tags);
+            // formData.append('genre', genero);
+            // formData.append('synopsis', sinopse);
+            try {
+                const response = await axios.post('http://localhost:3000/upload', formData, {
+                    headers: {
+                        "Content-Type": "multipart/form-data"
+                    }
+                });
+                console.log('Resposta do servidor:', response.data);
+            } catch (error) {
+                console.log('Erro ao fazer upload:', error);
+            }
+        } else {
+            console.log('Nenhum arquivo selecionado');
+        }
     };
 
     const idades = ['Livre', '10', '12', '14', '16', '18'];
@@ -43,13 +74,15 @@ const VideoConf = () => {
                 <h1>Upload de Vídeo</h1>
                 <form onSubmit={handleSubmit}>
                     <div>
-                        <label htmlFor="video">Upload de video</label>
+                        <label htmlFor="video">Upload de vídeo</label>
                         <input
                             className="input-upload"
                             type="file"
+                            accept=".mp4"
                             id="video"
-                            onChange={(e) => setFile(e.target.files[0])}
+                            onChange={handleVideoChange}
                         />
+                        <button onClick={handleUpload}>Enviar</button>
                     </div>
                     <div>
                         <label htmlFor="poster">Poster</label>
@@ -61,6 +94,16 @@ const VideoConf = () => {
                         />
                     </div>
                     <div>
+                        <label htmlFor="Titulo">Título</label>
+                        <input
+                            className="input-upload"
+                            type="text"
+                            id="Titulo"
+                            value={titulo}
+                            onChange={(e) => setTitulo(e.target.value)}
+                        />
+                    </div>
+                    <div>
                         <label htmlFor="tags">Tags</label>
                         <input
                             className="input-upload"
@@ -68,6 +111,16 @@ const VideoConf = () => {
                             id="tags"
                             value={tags}
                             onChange={(e) => setTags(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="sinopse">Sinopse</label>
+                        <input
+                            className="input-upload"
+                            type="text"
+                            id="sinopse"
+                            value={sinopse}
+                            onChange={(e) => setSinopse(e.target.value)}
                         />
                     </div>
                     <div>
@@ -91,7 +144,7 @@ const VideoConf = () => {
                                 </option>
                             ))}
                         </select>
-                        <button type="submit">Upload</button>
+                        <button type="submit" onClick={handleUpload}>Upload</button>
                     </div>
                 </form>
             </div>

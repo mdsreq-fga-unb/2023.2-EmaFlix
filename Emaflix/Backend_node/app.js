@@ -5,18 +5,20 @@ const mongoose = require('mongoose');
 require('dotenv').config({ path: '../arquivos.env' });
 const app = express();
 const cors = require('cors');
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 const getVideos = require('./controller/videosController.js');
-const {getMovieDetail, AdicionarComentario, getVideoCaminho, RemoverComentario, SalvarMyvideo, RemoverMyvideo} = require('./controller/videoCaminhoController.js');
-const {uploadVideos, upload} = require('./controller/uploadVideos.js');
-const {login, register} = require('./auth/login.js');
-const {getUser, chargePermission} = require('./controller/configurarUser.js');
+const { getMovieDetail, AdicionarComentario, getVideoCaminho, RemoverComentario, SalvarMyvideo, RemoverMyvideo } = require('./controller/videoCaminhoController.js');
+const { uploadVideos, upload } = require('./controller/uploadVideos.js');
+const { login, register } = require('./auth/login.js');
+const { getUser, chargePermission } = require('./controller/configurarUser.js');
+
 
 const PORT = process.env.PORT || 3000;
 const mongoUrl = process.env.MONGO_URL;
 
-app.use(cors());
+
 
 mongoose.connect(mongoUrl, {
     useNewUrlParser: true,
