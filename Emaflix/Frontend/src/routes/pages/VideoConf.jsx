@@ -15,6 +15,7 @@ const VideoConf = () => {
     const [genero, setGenero] = useState('');
     const [titulo, setTitulo] = useState('');
     const [sinopse, setSinopse] = useState('');
+    const [id, setId] = useState('');
 
 
     const handleSubmit = (e) => {
@@ -29,11 +30,12 @@ const VideoConf = () => {
         if (video) {
             const formData = new FormData();
             formData.append('video', video);
-            // formData.append('title', titulo);
-            // formData.append('age', idade);
-            // formData.append('tags', tags);
-            // formData.append('genre', genero);
-            // formData.append('synopsis', sinopse);
+            formData.append('title', titulo);
+            formData.append('age', idade);
+            formData.append('tags', tags);
+            formData.append('genre', genero);
+            formData.append('synopsis', sinopse);
+            formData.append('id', id);
             try {
                 const response = await axios.post('http://localhost:3000/upload', formData, {
                     headers: {
@@ -133,6 +135,16 @@ const VideoConf = () => {
                                 </option>
                             ))}
                         </select>
+                    </div>
+                    <div>
+                        <label htmlFor="id">Id</label>
+                        <input
+                            className="input-upload"
+                            type="text"
+                            id="id"
+                            value={id}
+                            onChange={(e) => setId(e.target.value)}
+                        />
                     </div>
                     <div>
                         <label htmlFor="genero">Gênero</label>
