@@ -84,7 +84,6 @@ const VideoConf = () => {
                             id="video"
                             onChange={handleVideoChange}
                         />
-                        <button onClick={handleUpload}>Enviar</button>
                     </div>
                     <div>
                         <label htmlFor="poster">Poster</label>

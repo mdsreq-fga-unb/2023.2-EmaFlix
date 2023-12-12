@@ -23,7 +23,6 @@ const uploadVideos = async (req, res) => {
             return res.status(400).send('Nenhum arquivo foi enviado.');
         }
         const {title, age, tags, genre, synopsis, id} = req.body;
-        console.log(title);
         const videoFile = req.file;
         const blob = bucket.file(videoFile.originalname);
 
@@ -34,7 +33,7 @@ const uploadVideos = async (req, res) => {
         blobStream.on('finish', async () => {
             const publicUrl = `https://storage.googleapis.com/${bucket.name}/${blob.name}`;
 
-            const newVideo = new VideoCaminho({ path: publicUrl, ContentId:id, synopse: synopsis });
+            const newVideo = new VideoCaminho({ path: publicUrl, ContentId:id, synopsis: synopsis });
             await newVideo.save();
 
             const NewInfo = new Video({ ContentId:id, title: title, age: age, tags: tags, poster: "https://cdn.awsli.com.br/2500x2500/1610/1610163/produto/177684910/poster-homem-aranha-no-aranhaverso-g-a10251a0.jpg", genre: genre });
