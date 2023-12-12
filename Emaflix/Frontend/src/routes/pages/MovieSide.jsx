@@ -119,7 +119,7 @@ const MovieSide = () => {
                     ))}
                     <h3>{videos.age}</h3>
                 </div>
-                <p><strong>Sinopse:</strong> {moviesPath.synopse}</p>
+                <p><strong>Sinopse:</strong> {moviesPath.synopsis}</p>
             </div>
         </div>
     );
