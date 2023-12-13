@@ -13,11 +13,6 @@ const renderVideoCard = (video, UserLogado, handleDelete) => (
           <ul>
             {video.genre.map((genero, index) => (
               <li key={index}>{genero}
-                {UserLogado === 'conf' && (
-                  <button className="button-delete" onClick={() => handleDelete(video.ContentId)}>
-                    <span className="material-symbols-outlined">delete</span>
-                  </button>
-                )}
               </li>
             ))}
           </ul>

@@ -63,6 +63,10 @@
     border: 1px solid #b495e2;
 }
 
+.button-delete {
+    cursor: pointer;
+}
+
 .container-info p {
     color: white;
     font-family: inter;

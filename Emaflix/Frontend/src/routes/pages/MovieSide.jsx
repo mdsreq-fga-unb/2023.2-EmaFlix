@@ -106,7 +106,19 @@ const MovieSide = () => {
         }
     }
 
+    const DeleteVideo = async () => {
+        try {
+            const response = await axios.post('http://localhost:3000/deletevideo', {
+                id: id
+                
+        });
+        console.log('VideoDeletado');
+        window.location.href = '/';
 
+        } catch (error) {
+            console.log("Falha ao deletar vídeo");
+        }
+    }
 
     return (
         <div className="movie-side">
@@ -145,6 +157,11 @@ const MovieSide = () => {
                     ))}
                     <h3>{videos.age}</h3>
                     <button onClick={SaveVideo} className="SalvarVídeo">{saveVideoLoading ? 'Salvar Vídeo' : 'Salvo'}</button>
+                    {userLogado === 'conf' && (
+                  <button className="button-delete" onClick={DeleteVideo}>
+                    <span className="material-symbols-outlined">delete</span>
+                  </button>
+                )}
                 </div>
                 <p><strong>Sinopse:</strong> {moviesPath.synopsis}</p>
             </div>
