@@ -35,7 +35,7 @@ const Navbar = ({ }) => {
             <ul>
                 <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
                 <li><Link to={`/video_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">movie</span>Painel de vídeos</span><i></i></button></Link></li>
-                <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
+                <li>    <Link to={`/login`}><li><button onClick={handleLogout} className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">logout</span>Logout</span><i></i></button></li></Link></li>
             </ul>
         );
     } else if (UserLogado === 'sudo') {
@@ -43,7 +43,7 @@ const Navbar = ({ }) => {
             <ul>
                 <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
                 <li><Link to={`/usuario_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">settings</span>Painel de Usuários</span><i></i></button></Link></li>
-                <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
+                <li>    <Link to={`/login`}><li><button onClick={handleLogout} className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">logout</span>Logout</span><i></i></button></li></Link></li>
             </ul>
         );
     }
