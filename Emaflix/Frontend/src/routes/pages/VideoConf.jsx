@@ -8,6 +8,8 @@ import Filter from "./Filter"
 
 const VideoConf = () => {
 
+    const [isClicked, setIsClicked] = useState(false);
+
     const [video, setVideo] = useState(null);
     const [poster, setPoster] = useState(null);
     const [tags, setTags] = useState('');
@@ -27,6 +29,7 @@ const VideoConf = () => {
     };
 
     const handleUpload = async () => {
+        setIsClicked(true);
         if (video) {
             const formData = new FormData();
             formData.append('video', video);
@@ -42,7 +45,7 @@ const VideoConf = () => {
                         "Content-Type": "multipart/form-data"
                     }
                 });
-                console.log('Resposta do servidor:', response.data);
+                window.location.reload();
             } catch (error) {
                 console.log('Erro ao fazer upload:', error);
             }
@@ -155,7 +158,7 @@ const VideoConf = () => {
                                 </option>
                             ))}
                         </select>
-                        <button type="submit" onClick={handleUpload}>Upload</button>
+                        <button type="submit" onClick={handleUpload} disabled={isClicked}>{isClicked ? 'Carregando...' : 'Upload'}</button>
                     </div>
                 </form>
             </div>
