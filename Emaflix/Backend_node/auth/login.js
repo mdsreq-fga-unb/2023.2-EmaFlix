@@ -1,4 +1,3 @@
-// login.js
 const User = require('./UserModel.js');
 const jwt = require('jsonwebtoken');
 

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const UserModel = require('../auth/userModel.js');
+const UserModel = require('../auth/UserModel.js');
 
 const getUser = async (req, res) => {
     try {

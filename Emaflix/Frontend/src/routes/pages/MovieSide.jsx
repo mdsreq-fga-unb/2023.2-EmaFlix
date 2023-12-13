@@ -13,7 +13,9 @@ const MovieSide = () => {
     const [comments, setComments] = useState([]);
     const [commentConfirme, setCommentConfirme] = useState([]);
     const [commentDelete, setCommentDelete] = useState([]);
+    const [saveVideoLoading, setSaveVideoLoading] = useState([false]);
     console.log("Este é o user logado" + userLogado);
+
 
     useEffect(() => {
         const getMovies = async () => {
@@ -63,6 +65,24 @@ const MovieSide = () => {
         }
     }
 
+    const LoginUsername = localStorage.getItem('username');
+
+    const SaveVideo = async () => {
+        try {
+            const response = await axios.put(`http://localhost:3000/savemyvideo`, {
+                username: LoginUsername,
+                myvideoId: id
+            });
+            const apiresposta = response.data.message;
+            if (apiresposta == 'Vídeo adicionado com sucesso') {
+                alert("Vídeo adicionado com sucesso");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+        setSaveVideoLoading(true);
+    }
+
     const AlterarComments = (event) => {
         setComments(event.target.value);
     }
@@ -85,6 +105,8 @@ const MovieSide = () => {
             console.log(error);
         }
     }
+
+
 
     return (
         <div className="movie-side">
@@ -122,10 +144,12 @@ const MovieSide = () => {
                         <h3 key={index}>{item}</h3>
                     ))}
                     <h3>{videos.age}</h3>
+                    <button onClick={SaveVideo} className="SalvarVídeo">{saveVideoLoading ? 'Salvar Vídeo' : 'Salvo'}</button>
                 </div>
                 <p><strong>Sinopse:</strong> {moviesPath.synopsis}</p>
             </div>
         </div>
+
     );
 };
 

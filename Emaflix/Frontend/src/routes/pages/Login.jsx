@@ -25,6 +25,7 @@ const Login = () => {
             localStorage.setItem('actions', response.data.user.actions);
             localStorage.setItem('myvideos', response.data.user.myvideos);
             localStorage.setItem('token', token);
+            localStorage.setItem('username', response.data.user.username);
             if (token != null) {
                 setTokenValido(true);
             }

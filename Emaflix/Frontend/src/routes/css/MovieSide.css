@@ -10,6 +10,18 @@
     margin-left: 2vw;
 }
 
+.SalvarVídeo {
+    background-color: #b495e2;
+    color: white;
+    font-family: inter;
+    border: none;
+    border-radius: 4px;
+    padding: 1vh 1vw;
+    margin-left: 1vw;
+    cursor: pointer;
+
+}
+
 .aviso-comment {
     color: rgb(0, 199, 17);
     font-family: inter;
