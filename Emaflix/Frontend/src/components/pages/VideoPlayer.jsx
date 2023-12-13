@@ -2,50 +2,44 @@ import React, { useState, useEffect, useRef } from 'react';
 import shaka from 'shaka-player';
 import Poster from '../../img/Emaflix_clear.png'
 
-const VideoPlayer = () => {
+const VideoPlayer = ({Url}) => {
   const [player, setPlayer] = useState(null);
   const videoRef = useRef(null);
+  const [videoUrl, setVideoUrl] = useState(Url);
+
+  useEffect(() => {
+    if(Url !== undefined || Url !== null) {
+      setVideoUrl(Url);
+    }
+  },[Url]);
 
   useEffect(() => {
     async function initApp() {
-      // Install built-in polyfills to patch browser incompatibilities.
       shaka.polyfill.installAll();
-
-      // Check to see if the browser supports the basic APIs Shaka needs.
       if (shaka.Player.isBrowserSupported()) {
-        // Everything looks good!
+      
         initPlayer();
       } else {
-        // This browser does not have the minimum set of APIs we need.
         console.error('Browser not supported!');
       }
     }
 
     async function initPlayer() {
-      // Create a Player instance.
       const videoElement = videoRef.current;
       const playerInstance = new shaka.Player(videoElement);
 
       const tracks = playerInstance.getVariantTracks();
-      // Populate your UI component with these tracks
-      // For example, create a dropdown menu with each track as an option
-
-      // Attach player to the state variable to make it easy to access in the JS console.
       setPlayer(playerInstance);
 
-      // Listen for error events.
       playerInstance.addEventListener('error', onErrorEvent);
 
-      // Update your UI on quality change
       playerInstance.addEventListener('adaptation', () => {
         const track = playerInstance.getVariantTracks().find(t => t.active);
         updateYourUI(track.height); // This is a custom function to update your UI
       });
 
-      // Try to load a manifest.
-      // This is an arbitrary URL and should be replaced with your video URL.
       try {
-        await playerInstance.load('https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4', null, 'video/mp4');
+        await playerInstance.load(videoUrl, null, 'video/mp4');
         // This runs if the asynchronous load is successful.
         console.log('The video has now been loaded!');
       } catch (e) {

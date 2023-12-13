@@ -89,7 +89,11 @@ const MovieSide = () => {
     return (
         <div className="movie-side">
             <div className="video-container">
-                <VideoPlayer className="video-player" />
+                {moviesPath.path !== undefined ? (
+                    <VideoPlayer className="video-player" Url={moviesPath.path} />
+                ) : (
+                    <div>Aguardando a URL do vídeo...</div>
+                )}
                 <div className="comments">
                     <h2>Comentarios: </h2>
                     <ul className="barraderolagem">
