@@ -13,6 +13,7 @@ const { getMovieDetail, AdicionarComentario, getVideoCaminho, RemoverComentario,
 const { uploadVideos, upload } = require('./controller/uploadVideos.js');
 const { login, register } = require('./auth/login.js');
 const { getUser, chargePermission } = require('./controller/configurarUser.js');
+const {deleteVideo} = require('./controller/deleteVideo.js');
 
 
 const PORT = process.env.PORT || 3000;
@@ -42,6 +43,7 @@ app.put('/chargepermissao', chargePermission);
 app.put('/savemyvideo', SalvarMyvideo);
 app.put('/removemyvideo', RemoverMyvideo);
 app.post('/upload', upload.single('video'), uploadVideos)
+app.post('/deletevideo', deleteVideo);
 
 //////////////////////////////
 
