@@ -19,3 +19,18 @@
     flex-wrap: wrap;
     row-gap: 3vh;
 }
+
+@media (max-width: 650px) {
+    .poster-img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .list-cards {
+        gap: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

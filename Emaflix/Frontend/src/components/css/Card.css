@@ -13,6 +13,10 @@
 
 }
 
+.card ul {
+    flex-wrap: wrap;
+}
+
 .button-delete {
     width: 2vw;
     height: 4vh;
@@ -24,7 +28,7 @@
 }
 
 .card:hover {
-    max-width: 17vw;
+    max-width: 16vw;
 }
 
 .card-genero ul li {
@@ -52,8 +56,22 @@
     color: #777;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
     .card {
-        width: 90%;
+        width: 250%;
+        font-size: 20px;
+    }
+    .card h2 {
+        font-size: 30px;
+        padding: auto;
+    }
+    .card img {
+        width: 250%;
+    }
+}
+
+@media (max-width: 800px) {
+    .card h2 {
+        font-size: 14px;
     }
 }

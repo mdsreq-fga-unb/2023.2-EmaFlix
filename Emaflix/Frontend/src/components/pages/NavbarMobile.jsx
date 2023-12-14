@@ -22,7 +22,7 @@ const Navbar = ({UserLogado}) => {
             
             <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span></span><i></i></button></Link></li>
             <li><Link to={`/video_save`}><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">notifications_active</span></span><i></i></button></Link></li>
-            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span></span><i></i></button></Link></li>
+            <li><Link to={`/login`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">logout</span></span><i></i></button></Link></li>
         </ul>
         );
       } else if (UserLogado === 'conf') {
@@ -30,7 +30,7 @@ const Navbar = ({UserLogado}) => {
             <ul className="r-button">
             <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
             <li><Link to={`/video_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">movie</span>Painel de vídeos</span><i></i></button></Link></li>
-            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
+            <li><Link to={`/login`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">logout</span></span><i></i></button></Link></li>
         </ul>
         );
       } else if (UserLogado === 'sudo') {
@@ -38,7 +38,7 @@ const Navbar = ({UserLogado}) => {
             <ul className="r-button">
             <li><Link to={`/filter`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">search</span>Pesquisa</span><i></i></button></Link></li>
             <li><Link to={`/usuario_conf`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">settings</span>Painel de Usuários</span><i></i></button></Link></li>
-            <li><Link to={`/profile`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">person</span>Perfil</span><i></i></button></Link></li>
+            <li><Link to={`/login`} ><button className="button-neon" style={{ '--clr': '#8A2BE2' }}><span><span className="material-symbols-outlined icon">logout</span></span><i></i></button></Link></li>
         </ul>
         );
       }

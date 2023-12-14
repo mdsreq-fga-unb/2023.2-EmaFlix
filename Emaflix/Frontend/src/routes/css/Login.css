@@ -105,3 +105,21 @@
     font-family: inter;
     cursor: pointer;
 }
+
+@media (max-width: 800px) {
+    .login-all {
+        flex-direction: column;
+    }
+    .login {
+        width: 100vw;
+    }
+    .container-logo-tela {
+        width: 100vw;
+    }
+    .container-login-tela {
+        width: 100vw;
+    }
+    form input, form button {
+        width: auto;
+}
+}
