@@ -14,6 +14,7 @@ const { uploadVideos, upload } = require('./controller/uploadVideos.js');
 const { login, register } = require('./auth/login.js');
 const { getUser, chargePermission } = require('./controller/configurarUser.js');
 const {deleteVideo} = require('./controller/deleteVideo.js');
+const http = require('http')
 
 
 const PORT = process.env.PORT || 3000;
@@ -47,6 +48,10 @@ app.post('/deletevideo', deleteVideo);
 
 //////////////////////////////
 
-app.listen(PORT, () => {
+const server = http.createServer(app);
+
+server.listen(PORT, () => {
     console.log(`Servidor está rodando em http://localhost:${PORT}`);
 });
+
+module.exports = server
