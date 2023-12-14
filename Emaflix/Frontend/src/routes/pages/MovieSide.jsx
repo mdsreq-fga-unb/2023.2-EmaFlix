@@ -20,7 +20,7 @@ const MovieSide = () => {
     useEffect(() => {
         const getMovies = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/videospath");
+                const response = await axios.get("https://recanto-cinema-a74e4167e1ec.herokuapp.com/videospath");
                 const moviesInfo = response.data.movieDetail;
                 const movieInfoFound = moviesInfo.find(movie => movie.ContentId == id)
                 setVideos(movieInfoFound);
@@ -34,7 +34,7 @@ const MovieSide = () => {
     useEffect(() => {
         const getPathMovies = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/videos");
+                const response = await axios.get("https://recanto-cinema-a74e4167e1ec.herokuapp.com/videos");
                 const movies = response.data.video;
                 console.log(movies);
                 const moviesFound = movies.find(movie => movie.ContentId == id)
@@ -50,7 +50,7 @@ const MovieSide = () => {
     const comentar = async () => {
         let newComment = comments;
         try {
-            const response = await axios.put(`http://localhost:3000/addcomentario`, {
+            const response = await axios.put(`https://recanto-cinema-a74e4167e1ec.herokuapp.com/addcomentario`, {
                 id: id,
                 comment: newComment
             });
@@ -70,7 +70,7 @@ const MovieSide = () => {
 
     const SaveVideo = async () => {
         try {
-            const response = await axios.put(`http://localhost:3000/savemyvideo`, {
+            const response = await axios.put(`https://recanto-cinema-a74e4167e1ec.herokuapp.com/savemyvideo`, {
                 username: LoginUsername,
                 myvideoId: id
             });
@@ -91,7 +91,7 @@ const MovieSide = () => {
 
     const DeletarComments = async (index) => {
         try {
-            const response = await axios.put(`http://localhost:3000/removecomentario`, {
+            const response = await axios.put(`https://recanto-cinema-a74e4167e1ec.herokuapp.com/removecomentario`, {
                 id: id,
                 comment: index
             });
@@ -106,7 +106,7 @@ const MovieSide = () => {
 
     const DeleteVideo = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/deletevideo', {
+            const response = await axios.post('https://recanto-cinema-a74e4167e1ec.herokuapp.com/deletevideo', {
                 id: id
         });
         console.log('VideoDeletado');

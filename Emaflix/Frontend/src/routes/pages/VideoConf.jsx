@@ -40,7 +40,7 @@ const VideoConf = () => {
             formData.append('synopsis', sinopse);
             formData.append('id', id);
             try {
-                const response = await axios.post('http://localhost:3000/upload', formData, {
+                const response = await axios.post('https://recanto-cinema-a74e4167e1ec.herokuapp.com/upload', formData, {
                     headers: {
                         "Content-Type": "multipart/form-data"
                     }

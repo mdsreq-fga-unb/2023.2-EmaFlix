@@ -16,7 +16,7 @@ const Login = () => {
     const Login = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3000/login', {
+            const response = await axios.post('https://recanto-cinema-a74e4167e1ec.herokuapp.com/login', {
                 username: username,
                 password: password
             });

@@ -34,7 +34,7 @@ const Cards = ({ filtros: ValueFilter, local }) => {
   useEffect(() => {
     const getMovies = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/videospath");
+        const response = await axios.get("https://recanto-cinema-a74e4167e1ec.herokuapp.com/videospath");
         setVideos(response.data.movieDetail);
       } catch (error) {
         console.error("Erro ao buscar");

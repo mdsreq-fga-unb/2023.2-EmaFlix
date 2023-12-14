@@ -8,7 +8,7 @@ const VideoSave = () => {
 
     const GetVideoSave = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/userconfig");
+            const response = await axios.get("https://recanto-cinema-a74e4167e1ec.herokuapp.com/userconfig");
             setVideoSavebanco(response.data);
             console.log(videoSavebanco);
             window.location.reload();

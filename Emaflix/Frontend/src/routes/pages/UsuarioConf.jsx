@@ -11,7 +11,7 @@ const UsuarioConf = () => {
     useEffect(() => {
         const getUserConf = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/userconfig");
+                const response = await axios.get("https://recanto-cinema-a74e4167e1ec.herokuapp.com/userconfig");
                 const userConfig = response.data;
                 setUsers(userConfig);
                 console.log(response.data);
@@ -31,7 +31,7 @@ const UsuarioConf = () => {
             return;
         }
         try {
-            const response = await axios.put(`http://localhost:3000/chargepermissao`, {
+            const response = await axios.put(`https://recanto-cinema-a74e4167e1ec.herokuapp.com/chargepermissao`, {
                 username: username,
                 newactions: newAction,
             });

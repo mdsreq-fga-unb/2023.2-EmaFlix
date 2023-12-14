@@ -6,7 +6,7 @@ const { deepEqual, deepStrictEqual, equal, throws } = require('node:assert');
 
 
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://recanto-cinema-a74e4167e1ec.herokuapp.com'
 var GLOBAL_LOGIN = ''
 
 

@@ -23,7 +23,7 @@ const Login = () => {
             return;
         }
         try {
-            const response = await axios.post('http://localhost:3000/register', {
+            const response = await axios.post('https://recanto-cinema-a74e4167e1ec.herokuapp.com/register', {
                 username: username,
                 password: password
             });
