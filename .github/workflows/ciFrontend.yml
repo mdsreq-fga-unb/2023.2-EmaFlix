@@ -21,3 +21,8 @@ jobs:
           npm run dev &
           sleep 10
           pkill -f "npm run dev"
+
+      - name: Run tests
+        run: |
+          cd Emaflix/Backend_node
+          npm test
