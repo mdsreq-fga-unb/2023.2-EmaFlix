@@ -110,7 +110,6 @@ const MovieSide = () => {
         try {
             const response = await axios.post('http://localhost:3000/deletevideo', {
                 id: id
-                
         });
         console.log('VideoDeletado');
         window.location.href = '/';
