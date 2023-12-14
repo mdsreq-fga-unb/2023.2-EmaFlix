@@ -27,4 +27,5 @@ jobs:
       - name: Run tests
         run: |
           cd Emaflix/Backend_node
+          npm install
           npm test
