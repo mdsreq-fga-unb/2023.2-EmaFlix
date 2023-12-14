@@ -51,6 +51,15 @@ npm start
 ```
 Back-end
 
+```
+cd 2023.2-2023.2-EmaFlix
+cd Emaflix
+cd Backend_node
+npm install
+npm start
+```
+
+
 ## ⚙️ Executando os testes
 
 ```
