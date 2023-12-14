@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import "../css/MovieSide.css"
 import VideoPlayer from '../../components/pages/VideoPlayer';
 import axios from 'axios';
-import { get } from 'mongoose';
+import { get, set } from 'mongoose';
 
 const MovieSide = () => {
     const { id } = useParams();
@@ -13,9 +13,9 @@ const MovieSide = () => {
     const [comments, setComments] = useState([]);
     const [commentConfirme, setCommentConfirme] = useState([]);
     const [commentDelete, setCommentDelete] = useState([]);
-    const [saveVideoLoading, setSaveVideoLoading] = useState([false]);
+    const [saveVideoLoading, setSaveVideoLoading] = useState(false);
+    const [VideoSaveStatus, setVideoSaveStatus] = useState('');
     console.log("Este é o user logado" + userLogado);
-
 
     useEffect(() => {
         const getMovies = async () => {
@@ -66,6 +66,7 @@ const MovieSide = () => {
     }
 
     const LoginUsername = localStorage.getItem('username');
+    
 
     const SaveVideo = async () => {
         try {
@@ -73,14 +74,11 @@ const MovieSide = () => {
                 username: LoginUsername,
                 myvideoId: id
             });
-            const apiresposta = response.data.message;
-            if (apiresposta == 'Vídeo adicionado com sucesso') {
-                alert("Vídeo adicionado com sucesso");
-            }
+            setVideoSaveStatus('! Vídeo salvo, e logo estarar disponível na página de vídeos salvos!');
+            setSaveVideoLoading(true);
         } catch (error) {
             console.log(error);
         }
-        setSaveVideoLoading(true);
     }
 
     const AlterarComments = (event) => {
@@ -88,7 +86,7 @@ const MovieSide = () => {
     }
 
     if (!moviesPath) {
-        return <p>Vídeo não encotrado irmão, cara trabalha num server de mine</p>;
+        return <p>Vídeo não encontrado</p>;
     }
 
     const DeletarComments = async (index) => {
@@ -155,7 +153,8 @@ const MovieSide = () => {
                         <h3 key={index}>{item}</h3>
                     ))}
                     <h3>{videos.age}</h3>
-                    <button onClick={SaveVideo} className="SalvarVídeo">{saveVideoLoading ? 'Salvar Vídeo' : 'Salvo'}</button>
+                    <button onClick={SaveVideo} className="SalvarVídeo">{saveVideoLoading ? 'Salvo' : 'Salvar Vídeo'}</button>
+                    <p className="aviso-save">{VideoSaveStatus}</p>
                     {userLogado === 'conf' && (
                   <button className="button-delete" onClick={DeleteVideo}>
                     <span className="material-symbols-outlined">delete</span>

@@ -11,6 +11,7 @@ const VideoSave = () => {
             const response = await axios.get("http://localhost:3000/userconfig");
             setVideoSavebanco(response.data);
             console.log(videoSavebanco);
+            window.location.reload();
         } catch (error) {
             console.log(error);
         }
@@ -27,7 +28,7 @@ const VideoSave = () => {
         <div className="video-save">
             <h2>Meus Vídeos salvos</h2>
             <div className="videos-salvos">
-                <Cards filtros={MeusVideos} local={1} />
+                <Cards filtros={MeusVideos} local={1}/>
             </div>
         </div>
     )

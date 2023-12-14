@@ -21,7 +21,6 @@ function App() {
     <div className="App">
       {
         isAuthenticated() ? (
-          console.log("isAuthenticated" + isAuthenticated),
           <>
             {isDesktop ? <Navbar className="Navbar_Switch"/> : <NavbarMobile className="Navbar_Switch_Mobile"/>}
             <div className="container">

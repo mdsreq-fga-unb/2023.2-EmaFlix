@@ -67,6 +67,12 @@
     cursor: pointer;
 }
 
+.aviso-save {
+    color: red;
+    font-family: inter;
+    margin-top: 1vh;
+}
+
 .container-info p {
     color: white;
     font-family: inter;
