@@ -8,6 +8,40 @@
     margin-left: 2.5vw;
 }
 
+.permission-charge {
+    display: flex;
+    margin-top: 1vh;
+}
+
+.aviso {
+    font-family: inter;
+    color: red;
+    margin-left: 2.5vw;
+}
+
+.permission-charge input {
+    border: none;
+    margin-left: 2.5vw;
+    font-family: inter;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 1vh 1vw;
+    background-color: #b495e2;
+}
+.permission-charge button {
+    border: none;
+    font-family: inter;
+    display: flex;
+    color: white;
+    border-radius: 8px;
+    padding: 1vh 1vw;
+    background-color: #B81414;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1vw;
+}
+
 .usuarios-conf ul {
     margin-left: 2.5vw;
     margin-top: 1vh;
