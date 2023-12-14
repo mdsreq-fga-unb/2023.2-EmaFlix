@@ -6,7 +6,7 @@ Recanto do Cinema é uma plataforma de streaming que tem o objetivo de centraliz
 
 Consulte nossa **([Documentação](https://mdsreq-fga-unb.github.io/2023.2-EmaFlix/))** para saber mais sobre o projeto.
 
-O site está hospedado em **([Site - Recanto do Cinema]([[https://2023-2-emaflix.vercel.app](https://recantodocinema.vercel.app)])))**
+O site está hospedado em **([Site - Recanto do Cinema](https://recantodocinema.vercel.app))**
 
 ### 👩‍💻 Usuários
 
