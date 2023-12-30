@@ -21,8 +21,6 @@
 
     **Indentação e Espaçamento:** Mantenha uma formatação consistente usando espaços ou tabs para indentação.
 
-    **Comentários:** Escreva comentários claros e concisos explicando o que o código está fazendo.
-
      **Duplicação de Código:** Refatore o código para evitar repetições. Use funções ou classes para encapsular 
      funcionalidades comuns.
 
@@ -101,7 +99,7 @@ Requisitos funcionais são um conjunto de especificações que delineiam o compo
 Requisitos não funcionais são critérios que definem as características e restrições que um sistema ou software deve possuir, além das suas funcionalidades. Eles se concentram em aspectos que não estão diretamente relacionados às operações específicas do sistema, mas são cruciais para garantir seu desempenho, segurança, usabilidade e eficiência.
 
 1. Design Padronizado: O sistema será desenvolvido usando um padrão de interfaces definido.
-2. Compatibilidade com Dispositivos Móveis: O site oferecerá uma versão adaptativa para usuários mobiles.
+2. Compatibilidade com Dispositivos Móveis: O site oferecerá uma versão adaptativa para usuários definidos como alunos.
 3. Compatibilidade com Dispositivos Móveis: Baseada na lista de telas padronizadas fornecida pelo Android Developers, a portabilidade garantida será de: 600 px >= largura =< 840 px  a 480 px >= altura =< 900 px
 
 | Classe de tamanho     | Pontos de interrupção | Representação do dispositivos                                   | Percentual           |
@@ -113,8 +111,8 @@ Requisitos não funcionais são critérios que definem as características e res
 | Altura média          | 480 dp+               | 96,56% dos tablets no modo paisagem e 97,59% de smartphones no modo retrato | 96,56% / 97,59% |
 | Altura expandida      | 900 dp+               | 94,25% de tablets no modo retrato                               | 94,25%               |
 
-4. Taxa de Qualidade de Vídeo: A plataforma será capaz de suporte a todas as qualidades de vídeo até 1080p.
-5. Capacidade de Armazenamento: A plataforma terá armazenamento baseado nos servidores disponibilizados pelo próprio campus.
+4. Taxa de Qualidade de Vídeo: A capacidade fornecidade pelo ShakaPlayer é: 2160p, entrentanto, por problemas nos servidores do IFB, foi acordado que não temos uma definição de limite de suporte, tão poucos testes de garantia.
+5. Capacidade de Armazenamento: Como citado acima, não temos garantia sobre capacidade de armazenamento.
 6. Suporte aos navegadores: A aplicação suportar os seguintes navegadores
 
 | Navegação       | Versão                         |

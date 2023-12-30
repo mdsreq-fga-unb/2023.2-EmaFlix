@@ -48,9 +48,9 @@ A aplicação suportar os seguintes navegadores:
 
 **React:** Será a biblioteca de JavaScript utilizada para construir as interfaces de usuário (UI) interativas e dinâmicas para aplicações web.
 
-**Java:** Será utilizado para construir as API que requisitadas pelas interfaces por meio de protocolos UDP ligadas ao servidores locais disponibilizados pelo IFB.
+**Node:** Será utilizado para construir as API que requisitadas pelas interfaces por meio de protocolos UDP ligadas ao servidores locais disponibilizados pelo IFB.
 
-**Jest/Git actions:** Utilizando o framework Jest para:
+**Test Runner/Git actions:** Utilizando o framework Jest para:
 
 |Teste | Ação |
 |------|------|
@@ -59,10 +59,22 @@ A aplicação suportar os seguintes navegadores:
 | Teste de componentes React | Verificar o funciomento de componentes do react, como tempo de renderização ou ação de seus estados |
 | Teste de Funções assíncronas | Verificar o funcionamento de chamadas assíncronas da API |
 
+Testes Realizados:
+
+|Teste | Ação | Realizado |
+|------|------|-----------|
+| Testes de unidades | Verificar o funciomento de códigos individualmente | Sim |
+| Teste de integração| Verificar o funciomento de códigos em conjuntos a outros| Sim |
+| Teste de componentes React | Verificar o funciomento de componentes do react, como tempo de renderização ou ação de seus estados | Não |
+| Teste de Funções assíncronas | Verificar o funcionamento de chamadas assíncronas da API | Não |
+
 **Portabilidade para celular:** Baseada na lista de telas padronizadas fornecida pelo Android Developers, a portabilidade garantida será de:  
+
 
 1. **600 px >= largura =< 840 px**
 2. **480 px >= altura =< 900 px**
+
+**A garantia de responsividade foi feito apenas para os usuários Aluno.**
 
 Lista de telas fornecida pelo Android Develops:
 

@@ -27,8 +27,8 @@ Em nossa metodologia de desenvolvimento foi escolhido as técnicas do XP e as ce
 
 - **Ritmo Sustentável:** Achamos importante que a equipe maximize seu tempo, de uma forma que não seja prejudicial.
 - **Integração Contínua:** Acreditamos que a integração contínua ajuda a todo a equipe, pois teremos em tempo de horas as contribuições de cada membro da equipe.
-- **Pequenas Liberações:** Acreditamos que o feedback do cliente ajudará bastante, e a equipe decidiu compartilhar pequenas liberações com o cliente.
-- **Jogo do Planejamento:** Utilizaremos o jogo do planejamento para definir com o cliente os produtos de backlog e descrever as histórias de usuário
+- Não realizada **Pequenas Liberações:** Acreditamos que o feedback do cliente ajudará bastante, e a equipe decidiu compartilhar pequenas liberações com o cliente. 
+- Não realizada **Jogo do Planejamento:** Utilizaremos o jogo do planejamento para definir com o cliente os produtos de backlog e descrever as histórias de usuário
 - **Metáfora:** Acreditamos que a criação de uma metáfora pode ser difícil, especialmente considerando que a aplicação não se encaixa bem em uma metáfora. Também consideramos que o cliente escolhido também é um dev, logo a metáfora deixa de ser tão necessária na relação Equipe Scrum e PO.
 - **Testes de cliente:** Devido a dificuldades de horários, não será possível implementar a prática de toda a equipe. No entanto, vamos buscar formas de colaboração e integração em níveis menores, garantindo que todos possam contribuir para o sucesso do projeto.
 

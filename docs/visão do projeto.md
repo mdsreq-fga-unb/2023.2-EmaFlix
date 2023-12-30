@@ -5,10 +5,10 @@
 |       Papel      | Atribuições | Responsável | Participantes |
 |------------------|-------------| ------------|-----------------|
 |Cliente           | Fornecer feedback, validar entregas | Diego Sodré | Diego Sodré (Cliente), George Marsicano (Prof)
-| Dev Back end     | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de back-end do produto​ | Israel Silva Nunes /  Pedro Paulo Monte Pagani​ | Aline, Danilo, Israel, Pedro, Uires |
-| Dev Ci Test      | Executar testes e implementar a integração contínua | Aline Melo Oliveira /  Uires Carlos de Oliveira​ | Aline, Danilo, Israel, Pedro, Uires |
-| Dev Front End    | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de front-end do produto | Uires Carlos de Oliveira​ | Aline, Danilo, Israel, Pedro, Uires |
-| Dev Scrum Master | Organização de sprints, planejamento de objetivos​​ | Danilo Naves do Nascimento | Aline, Danilo, Israel, Pedro, Uires |
+| Dev Back end     | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de back-end do produto​ | Danilo Naves | Danilo Naves|
+| Dev Ci Test      | Executar testes e implementar a integração contínua | Aline Melo Oliveira /  Uires Carlos de Oliveira​ | Danilo Naves |
+| Dev Front End    | Codificar o produto, codificar testes unitários, realizar refatoração, quando referentes à parte de front-end do produto | Danilo Naves​ | Aline, Danilo,Uires |
+| Dev Scrum Master | Organização de sprints, planejamento de objetivos​​ | Danilo Naves do Nascimento | Danilo Naves |
 |Product Owner   |Atualizar escopo do produto, organizar sprints, validar entregas| Allex Medrado | Allex Medrado, Diego Sodré
 
 ## Planejamento das Fases e/ou Iterações do Projeto

@@ -24,13 +24,22 @@ O trancamento de um dos membros da equipe causou a reavaliação do que seria fe
 ## Unidade 3
 
 Lições aprendidas:
-
 Dificuldade de comunicação referente à divisão de tarefas.
 
 Ações a tomar:
-
 Estabelecemos um quadro kanban.
 
 Dificuldades e Superações:
-
 Mais um membro deixou a matéria causando uma redivisão de tarefas e responsabilidades.
+
+
+## Unidade 4
+
+Lições aprendidas:
+A falta de recursos limitou a capacidade do nosso projeto
+
+Ações a tomar:
+Comunicamos nossas dificuldades ao cliente e remanejamos as expectativas 
+
+Dificuldades e Superações:
+Tivemos dificuldade com as tecnologias utilizadas e contamos com o apoio da monitora
